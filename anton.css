@@ -656,9 +656,10 @@
     }
 
     .author__content {
-        padding: 71px 26px 38px 0;
+        padding: 71px 26px 38px 58px;
     }
         .author__quote {
+            position: relative;
             border-top: none;
             border-bottom: none;
             margin-bottom: 43px;
@@ -669,6 +670,33 @@
             .author__quote p {
                 font-size: inherit;
                 line-height: inherit;
+            }
+
+            .author__quote::before {
+                content: "";
+                position: absolute;
+                right: 100%;
+                margin-right: 4px;
+                top: -17px;
+                display: block;
+                width: 27px;
+                height: 24px;
+                background-image: url("images/quote.svg");
+                background-repeat: no-repeat;
+                background-position: center center;
+            }
+
+            .author__quote::after {
+                content: "";
+                position: absolute;
+                right: -5px;
+                bottom: -5px;
+                display: block;
+                width: 27px;
+                height: 24px;
+                background-image: url("images/quote.svg");
+                background-repeat: no-repeat;
+                background-position: center center;
             }
 
         .author__name {
@@ -707,8 +735,6 @@
                 background-image: url("images/author-experience.svg");
             }
 
-        .author
-
 
 @media (min-width: 768px) and (max-width: 1199px) {
 
@@ -722,7 +748,7 @@
         }
 
         .author__content {
-
+            padding-left: 0;
         }
             .author__quote {
                 margin-bottom: 36px;
@@ -770,6 +796,7 @@
             text-align: left;
         }
             .author__quote {
+                margin-bottom: 49px;
                 padding-left: 26px;
                 padding-right: 0;
             }
