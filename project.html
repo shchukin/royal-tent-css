@@ -10,6 +10,7 @@
 
     <meta name="keywords" content="проекты шатров, проекты тентов, проекты RoyalTent">
     <meta name="description" content="Реализованные проекты шатров RoyalTent">
+    <script type="text/javascript" src="./project_files/jquery-1.12.4.min.js"></script>
     <script type="text/javascript" async="" src="./project_files/d_client_new.js"></script>
     <script async="true" type="text/javascript" src="./project_files/js"></script>
     <script type="text/javascript" async="" src="./project_files/leadback.js"></script>
@@ -2959,16 +2960,47 @@
                             <!-- Вёрстка Антона -->
 
                             <link rel="stylesheet" href="anton.css">
+                            <script src="anton.js"></script>
 
                             <div class="project__grid">
                                 <div class="project__tile">
                                     <div class="preview" href="">
-                                        <div class="preview__gallery">
-                                            <img class="preview__photo"
-                                                 srcset="temp/project-thumbnail@2x.jpg 2x"
-                                                 src="temp/project-thumbnail.jpg"
-                                                 alt=""
-                                            >
+                                        <div class="preview__gallery slides">
+                                            <div class="slides__stage">
+                                                <a class="slides__item slides__item--current" href="#">
+                                                    <img class="slides__photo"
+                                                         srcset="temp/project-thumbnail-a@2x.jpg 2x"
+                                                         src="temp/project-thumbnail-a.jpg"
+                                                         alt=""
+                                                    >
+                                                </a>
+                                                <a class="slides__item" href="#">
+                                                    <img class="slides__photo"
+                                                         srcset="temp/project-thumbnail-b@2x.jpg 2x"
+                                                         src="temp/project-thumbnail-b.jpg"
+                                                         alt=""
+                                                    >
+                                                </a>
+                                                <a class="slides__item" href="#">
+                                                    <img class="slides__photo"
+                                                         srcset="temp/project-thumbnail-c@2x.jpg 2x"
+                                                         src="temp/project-thumbnail-c.jpg"
+                                                         alt=""
+                                                    >
+                                                </a>
+                                                <a class="slides__item" href="#">
+                                                    <img class="slides__photo"
+                                                         srcset="temp/project-thumbnail-d@2x.jpg 2x"
+                                                         src="temp/project-thumbnail-d.jpg"
+                                                         alt=""
+                                                    >
+                                                </a>
+                                            </div>
+                                            <div class="slides__navigation">
+                                                <button class="slides__handler slides__handler--current"></button>
+                                                <button class="slides__handler"></button>
+                                                <button class="slides__handler"></button>
+                                            </div>
                                         </div>
                                         <div class="preview__summary">
                                             <div class="preview__param">
@@ -3026,12 +3058,16 @@
                                 </div>
                                 <div class="project__tile">
                                     <div class="preview" href="">
-                                        <div class="preview__gallery">
-                                            <img class="preview__photo"
-                                                 srcset="temp/project-thumbnail@2x.jpg 2x"
-                                                 src="temp/project-thumbnail.jpg"
-                                                 alt=""
-                                            >
+                                        <div class="preview__gallery slides">
+                                            <div class="slides__stage">
+                                                <a class="slides__item slides__item--current" href="#">
+                                                    <img class="slides__photo"
+                                                         srcset="temp/project-thumbnail-b@2x.jpg 2x"
+                                                         src="temp/project-thumbnail-b.jpg"
+                                                         alt=""
+                                                    >
+                                                </a>
+                                            </div>
                                         </div>
                                         <div class="preview__summary">
                                             <div class="preview__param">
@@ -3089,12 +3125,16 @@
                                 </div>
                                 <div class="project__tile">
                                     <div class="preview" href="">
-                                        <div class="preview__gallery">
-                                            <img class="preview__photo"
-                                                 srcset="temp/project-thumbnail@2x.jpg 2x"
-                                                 src="temp/project-thumbnail.jpg"
-                                                 alt=""
-                                            >
+                                        <div class="preview__gallery slides">
+                                            <div class="slides__stage">
+                                                <a class="slides__item slides__item--current" href="#">
+                                                    <img class="slides__photo"
+                                                         srcset="temp/project-thumbnail-c@2x.jpg 2x"
+                                                         src="temp/project-thumbnail-c.jpg"
+                                                         alt=""
+                                                    >
+                                                </a>
+                                            </div>
                                         </div>
                                         <div class="preview__summary">
                                             <div class="preview__param">
@@ -3152,12 +3192,16 @@
                                 </div>
                                 <div class="project__tile">
                                     <div class="preview" href="">
-                                        <div class="preview__gallery">
-                                            <img class="preview__photo"
-                                                 srcset="temp/project-thumbnail@2x.jpg 2x"
-                                                 src="temp/project-thumbnail.jpg"
-                                                 alt=""
-                                            >
+                                        <div class="preview__gallery slides">
+                                            <div class="slides__stage">
+                                                <a class="slides__item slides__item--current" href="#">
+                                                    <img class="slides__photo"
+                                                         srcset="temp/project-thumbnail-d@2x.jpg 2x"
+                                                         src="temp/project-thumbnail-d.jpg"
+                                                         alt=""
+                                                    >
+                                                </a>
+                                            </div>
                                         </div>
                                         <div class="preview__summary">
                                             <div class="preview__param">
@@ -3674,7 +3718,6 @@ if (!window.BX.message) window.BX.message = function (mess) {
 <script type="text/javascript">(window.BX || top.BX).message({'LANGUAGE_ID': 'ru', 'FORMAT_DATE': 'DD.MM.YYYY', 'FORMAT_DATETIME': 'DD.MM.YYYY HH:MI:SS', 'COOKIE_PREFIX': 'BITRIX_SM', 'SERVER_TZ_OFFSET': '10800', 'UTF_MODE': 'Y', 'SITE_ID': 's1', 'SITE_DIR': '/', 'USER_ID': '', 'SERVER_TIME': '1694774072', 'USER_TZ_OFFSET': '0', 'USER_TZ_AUTO': 'Y', 'bitrix_sessid': 'dd710ca8c6839e17f2e3edd387e6ab36'});</script>
 <script type="text/javascript" src="./project_files/kernel_main_v1.js"></script>
 <script type="text/javascript" src="./project_files/ajax.min.js"></script>
-<script type="text/javascript" src="./project_files/jquery-1.12.4.min.js"></script>
 <script type="text/javascript" src="./project_files/main.popup.bundle.min.js"></script>
 <script type="text/javascript">BX.setJSList(['/bitrix/js/main/core/core_fx.js', '/local/templates/aspro-scorp_royaltent/components/bitrix/catalog.smart.filter/123/script.js', '/local/templates/aspro-scorp_royaltent/components/bitrix/map.yandex.view/.default/script.js', '/local/templates/aspro-scorp_royaltent/components/bitrix/news.list/projects-map/script.js', '/bitrix/components/bitrix/search.title/script.js', '/local/templates/aspro-scorp_royaltent/js/jquery.actual.min.js', '/local/templates/aspro-scorp_royaltent/js/jquery.fancybox.js', '/local/templates/aspro-scorp_royaltent/js/source/helpers/jquery.fancybox-media.js', '/local/templates/aspro-scorp_royaltent/js/blink.js', '/local/templates/aspro-scorp_royaltent/vendor/jquery.easing.js', '/local/templates/aspro-scorp_royaltent/vendor/jquery.appear.js', '/local/templates/aspro-scorp_royaltent/vendor/jquery.cookie.js', '/local/templates/aspro-scorp_royaltent/vendor/bootstrap.js', '/local/imageflow/imageflow.js', '/local/owlcarousel/owl.carousel.min.js', '/local/templates/aspro-scorp_royaltent/vendor/flexslider/jquery.flexslider-min.js', '/local/templates/aspro-scorp_royaltent/vendor/jquery.validate.min.js', '/local/templates/aspro-scorp_royaltent/js/jquery.uniform.min.js', '/local/templates/aspro-scorp_royaltent/js/jqModal.js', '/local/templates/aspro-scorp_royaltent/js/detectmobilebrowser.js', '/local/templates/aspro-scorp_royaltent/js/general.js', '/local/js/jquery.animateNumber.min.js', '/local/js/jquery.waypoints.min.js', '/local/js/waypoint.js', '/local/templates/aspro-scorp_royaltent/js/custom.js', '/local/templates/aspro-scorp_royaltent/js/akuweb_scripts.js', '/local/templates/aspro-scorp_royaltent/vendor/slick/slick.js', '/local/templates/aspro-scorp_royaltent/vendor/jvectormap/jquery-jvectormap-2.0.5.min.js', '/local/templates/aspro-scorp_royaltent/vendor/jvectormap/jquery-jvectormap-world-mill.js', '/local/templates/aspro-scorp_royaltent/js/plugins/swiper-bundle.js', '/local/templates/aspro-scorp_royaltent/js/plugins/smooth-scrollbar.js', '/local/templates/aspro-scorp_royaltent/js/hystmodal.min.js', '/local/templates/aspro-scorp_royaltent/js/app.js', '/bitrix/components/abudagov/socnetlink/templates/.default/script.js', '/local/templates/aspro-scorp_royaltent/js/jquery.inputmask.bundle.min.js']);</script>
 <script>BX.message({

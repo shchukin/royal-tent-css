@@ -24,6 +24,78 @@
 }
 
 
+.slides {
+
+}
+    .slides__stage {
+
+    }
+        .slides__item {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .slides__item--current {
+            z-index: 10;
+            opacity: 1;
+            visibility: visible;
+        }
+            .slides__photo {
+                vertical-align: top;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                background-color: #F1F1F1;
+            }
+
+            .slides__photo:hover {
+                filter: brightness(1.025) contrast(1.025);
+            }
+
+    .slides__navigation {
+        position: absolute;
+        z-index: 20;
+        left: 0;
+        right: 0;
+        bottom: 10px;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        pointer-events: none;
+    }
+        .slides__handler {
+            position: relative;
+            width: 32px;
+            height: 32px;
+            pointer-events: auto;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+        }
+            .slides__handler::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                display: block;
+                margin: auto;
+                width: 24px;
+                height: 4px;
+                border-radius: 2px;
+                background-color: #949494;
+            }
+
+            .slides__handler--current::before {
+                background-color: #FFFFFF;
+            }
+
 .preview {
     display: block;
     box-shadow: inset 0 0 0 1px #ECECEC;
@@ -34,20 +106,9 @@
     color: inherit;
 }
     .preview__gallery {
-
+        position: relative;
+        aspect-ratio: 670 / 362;
     }
-        .preview__photo {
-            vertical-align: top;
-            width: 100%;
-            height: auto;
-            aspect-ratio: 670 / 362;
-            object-fit: cover;
-            background-color: #F1F1F1;
-        }
-
-    /*.preview__photo:hover {*/
-    /*    filter: brightness(1.025) contrast(1.025);*/
-    /*}*/
 
     .preview__summary {
         display: flex;
@@ -152,7 +213,7 @@
         .preview__gallery {
 
         }
-            .preview__photo {
+            .slides__photo {
 
             }
 
@@ -278,13 +339,12 @@
         /*color: inherit;*/
     }
         .preview__gallery {
-
+            aspect-ratio: 4 / 3;
         }
-            .preview__photo {
+            .slides__photo {
                 /*vertical-align: top;*/
                 /*width: 100%;*/
                 /*height: auto;*/
-                aspect-ratio: 4 / 3;
                 /*object-fit: cover;*/
                 /*background-color: #F1F1F1;*/
             }
