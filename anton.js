@@ -19,5 +19,29 @@
             slide( $(this).parents('.slideshow'), $(this).index());
         });
 
+
+
+        $('.param__handler').on('click', function () {
+            const $param = $(this).parents('.param');
+            if( !$param.hasClass('param--expanded') ) {
+                $('.param').removeClass('param--expanded');
+                $param.addClass('param--expanded');
+            } else {
+                $param.removeClass('param--expanded');
+            }
+        });
+
+        $(document).on('click', function (event) {
+            if (!$(event.target).closest('.param').length) {
+                $('.param').removeClass('param--expanded');
+            }
+        });
+
+        $(document).on('keyup', function (event) {
+            if (event.keyCode === 27) {
+                $('.param').removeClass('param--expanded');
+            }
+        });
+
     });
 })(jQuery);
