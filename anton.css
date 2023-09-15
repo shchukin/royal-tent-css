@@ -38,6 +38,8 @@
             bottom: 0;
             opacity: 0;
             visibility: hidden;
+            transition: opacity 0.5s ease,
+                        visibility 0.5s ease;
         }
 
         .slideshow__item--current {
@@ -51,10 +53,11 @@
                 height: 100%;
                 object-fit: cover;
                 background-color: #F1F1F1;
+                transition: filter 0.3s ease;
             }
 
             .slideshow__photo:hover {
-                filter: brightness(1.025) contrast(1.025);
+                filter: brightness(1.05) contrast(1.05);
             }
 
     .slideshow__navigation {
@@ -90,12 +93,13 @@
                 height: 4px;
                 border-radius: 2px;
                 background-color: #949494;
+                transition: background-color 0.5s ease;
             }
 
-        .slides__dot--current {
+        .slideshow__dot--current {
 
         }
-            .slides__dot--current::before {
+            .slideshow__dot--current::before {
                 background-color: #FFFFFF;
             }
 

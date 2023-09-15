@@ -1,43 +1,23 @@
 (function($) {
+    $(document).ready(function (){
 
-    function slide($slideshow, slideTo) {
-        var $items = $slideshow.find('.slideshow__item')
-        var $itemCurrent = $slideshow.find('.slideshow__item--current');
-        var $counter = $slideshow.find('.slideshow__counter');
-        var $next = $slideshow.find('.slideshow__control--next');
-        var $prev = $slideshow.find('.slideshow__control--prev');
-        var $dots = $slideshow.find('.slideshow__dot');
-        var $dotCurrent = $slideshow.find('.slideshow__dot--current');
-        var current = $itemCurrent.index();
-        var total = $items.length;
+        function slide($slideshow, slideTo) {
+            var $items = $slideshow.find('.slideshow__item')
+            var $itemCurrent = $slideshow.find('.slideshow__item--current');
+            var $dots = $slideshow.find('.slideshow__dot');
+            var $dotCurrent = $slideshow.find('.slideshow__dot--current');
+            var current = $itemCurrent.index();
 
-        $itemCurrent.removeClass('slideshow__item--current');
-        $slideshow.find('.slideshow__item').eq(slideTo).addClass('slideshow__item--current');
-        $counter.html( (slideTo + 1) + '/' + total )
+            $itemCurrent.removeClass('slideshow__item--current');
+            $slideshow.find('.slideshow__item').eq(slideTo).addClass('slideshow__item--current');
 
-        $dotCurrent.removeClass('slideshow__dot--current');
-        $slideshow.find('.slideshow__dot').eq(slideTo).addClass('slideshow__dot--current');
-
-
-        /* Disabling arrows */
-
-        $prev.removeClass('slideshow__control--disabled').prop('disabled', false);
-        $next.removeClass('slideshow__control--disabled').prop('disabled', false);
-
-        if ( slideTo === total - 1 ) {
-            $next.addClass('slideshow__control--disabled').prop('disabled', true);
-        } else if ( slideTo === 0 ) {
-            $prev.addClass('slideshow__control--disabled').prop('disabled', true);
+            $dotCurrent.removeClass('slideshow__dot--current');
+            $slideshow.find('.slideshow__dot').eq(slideTo).addClass('slideshow__dot--current');
         }
 
-    }
+        $('.slideshow__dot').on('click', function () {
+            slide( $(this).parents('.slideshow'), $(this).index());
+        });
 
-    $('.slideshow__dot').on('click', function () {
-        alert()
-
-        slide( $(this).parents('.slideshow'), $(this).index());
     });
-
-
-
 })(jQuery);
