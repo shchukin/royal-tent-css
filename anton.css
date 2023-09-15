@@ -173,10 +173,11 @@
             opacity: 1;
             visibility: visible;
         }
-            .slideshow__photo {
+            .slideshow__photo,
+            .slideshow .slideshow__photo { /* конфликт */
                 vertical-align: top;
                 width: 100%;
-                height: 100%;
+                height: 100% !important;
                 object-fit: cover;
                 background-color: #F1F1F1;
                 transition: filter 0.3s ease;
