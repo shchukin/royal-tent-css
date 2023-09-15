@@ -7,7 +7,7 @@
         min-width: 100%;
     }
 
-@media (768px <= width) {
+@media (min-width: 768px) {
     .filter .bx_filter_parameters_box:nth-child(1) {
         min-width: 200px !important;
         max-width: 200px;
@@ -39,7 +39,7 @@
     margin-top: 8px;
 }
 
-@media (width <1300px) {
+@media (max-width: 1299px) {
     .catalog__filter-button {
         margin-top: 20px;
         width: 100%;
@@ -61,7 +61,7 @@
         font-size: 16px;
     }
 
-@media (width < 1200px) {
+@media (max-width: 1199px) {
     .more-filters {
         padding-left: 0;
     }
@@ -81,7 +81,7 @@
 
     }
 
-@media (width < 768px) {
+@media (max-width: 767px) {
 
     .project__grid {
         display: block;
@@ -121,7 +121,7 @@
 
 
 .button--tag {
-    
+
 }
 
 
@@ -152,8 +152,7 @@
     }
 
 
-
-@media (width < 768px) {
+@media (max-width: 767px) {
 
     .filtering {
         /*padding-top: 28px;*/
@@ -371,7 +370,7 @@
                 }
 
 
-@media ( 768px <= width < 992px) {
+@media (max-width: 767px) {
 
     .preview {
 
@@ -493,7 +492,7 @@
 }
 
 
-@media ( width < 768px ) {
+@media (max-width: 767px) {
 
     .preview {
         /*display: block;*/
@@ -681,8 +680,7 @@
             }
 
 
-
-@media (768px <= width < 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
 
     .author {
 
@@ -724,9 +722,7 @@
 }
 
 
-
-
-@media (width < 768px) {
+@media (max-width: 767px) {
 
     .author {
         display: block;
