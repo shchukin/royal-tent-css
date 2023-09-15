@@ -813,3 +813,35 @@
 .nobr {
     white-space: nowrap;
 }
+
+
+.pagination--alternate-hover {
+
+}
+
+    .pagination--alternate-hover > li > a, .pagination > li > span {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+        .pagination a,
+        .pagination span {
+            padding: 6px 13px !important
+        }
+
+    .pagination--alternate-hover > li:not(.active) > a:hover,
+    .pagination--alternate-hover > li:not(.active) > span:hover,
+    .pagination--alternate-hover > li:not(.active) > a:focus,
+    .pagination--alternate-hover > li:not(.active) > span:focus {
+        background-color: #D7D7D7 !important;
+        border-color: #D7D7D7 !important;
+    }
+
+    .pagination--alternate-hover li.active + li a,
+    .pagination--alternate-hover li.active + li span,
+    .pagination--alternate-hover li:hover + li a,
+    .pagination--alternate-hover li:focus + li span,
+    .pagination--alternate-hover li:focus + li a,
+    .pagination--alternate-hover li:hover + li span {
+        border-left-color: #D7D7D7 !important;
+    }
