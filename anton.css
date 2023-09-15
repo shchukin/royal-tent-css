@@ -837,33 +837,60 @@
 }
 
 
-.pagination--alternate-hover {
-
+.pages {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 40px 0;
+    margin-left: -13px;
+    margin-right: -13px;
+    text-align: center;
 }
-
-    .pagination--alternate-hover > li > a, .pagination > li > span {
-        font-size: 16px;
-        line-height: 20px;
+    .pages__ribbon {
+        display: inline-flex;
+        vertical-align: top;
+        gap: 4px;
+        padding-left: 13px;
+        padding-right: 13px;
     }
-
-        .pagination a,
-        .pagination span {
-            padding: 6px 13px !important
+        .pages__item {
+            min-width: 32px;
+            flex-shrink: 0;
+            padding: 4px 9px;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
         }
 
-    .pagination--alternate-hover > li:not(.active) > a:hover,
-    .pagination--alternate-hover > li:not(.active) > span:hover,
-    .pagination--alternate-hover > li:not(.active) > a:focus,
-    .pagination--alternate-hover > li:not(.active) > span:focus {
-        background-color: #D7D7D7 !important;
-        border-color: #D7D7D7 !important;
-    }
+        .pages__item:not(.pages__item--separator):hover {
+            background-color: #D7D7D7;
+            color: #FFFFFF;
+        }
 
-    .pagination--alternate-hover li.active + li a,
-    .pagination--alternate-hover li.active + li span,
-    .pagination--alternate-hover li:hover + li a,
-    .pagination--alternate-hover li:focus + li span,
-    .pagination--alternate-hover li:focus + li a,
-    .pagination--alternate-hover li:hover + li span {
-        border-left-color: #D7D7D7 !important;
+        .pages__item--highlight,
+        .pages__item--highlight:hover {
+            background-color: #D5C5A7;
+            color: #FFFFFF;
+        }
+
+        .pages__item--current,
+        .pages__item--current:hover {
+            background-color: #D5C5A7;
+            color: #FFFFFF;
+        }
+
+
+.hide-scrollbar {
+    scrollbar-width: none; /* hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* hide scrollbar in Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar { /* hide scrollbar in webkit based browsers */
+    display: none;
+}
+
+
+@media (max-width: 767px) {
+    .pages {
+        padding: 24px 0;
     }
+}
