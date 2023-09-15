@@ -405,7 +405,7 @@
                 }
 
 
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 991px) {
 
     .preview {
 
@@ -564,14 +564,7 @@
             }
 
             .preview__param::before {
-                /*content: "";*/
-                /*position: absolute;*/
-                /*left: 0;*/
-                /*top: 16px;*/
-                /*bottom: 16px;*/
-                /*display: block;*/
-                /*width: 1px;*/
-                /*background-color: #E0E0E0;*/
+                display: none;
             }
 
             .preview__param:first-child::before {
@@ -713,6 +706,8 @@
                 height: 24px;
                 background-image: url("images/author-experience.svg");
             }
+
+        .author
 
 
 @media (min-width: 768px) and (max-width: 1199px) {
