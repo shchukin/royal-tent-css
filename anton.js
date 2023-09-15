@@ -15,7 +15,7 @@
             $slideshow.find('.slideshow__dot').eq(slideTo).addClass('slideshow__dot--current');
         }
 
-        $('.slideshow__dot').on('click', function () {
+        $('.slideshow__dot').on('mouseenter', function () {
             slide( $(this).parents('.slideshow'), $(this).index());
         });
 
