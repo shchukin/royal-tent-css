@@ -1,17 +1,21 @@
 .filter .bx_filter_parameters_box {
-    min-width: 200px !important;
-    max-width: 200px;
+    min-width: 190px !important;
+    max-width: 190px;
     margin: 0 !important;
 }
 
     .select .bx_filter_parameters_box_title {
-        min-width: 190px;
+        min-width: 180px;
     }
 
     .filter .bx_filter_parameters_box_title:after {
         right: 10px;
     }
 
+
+.catalog__filter-button {
+    margin-top: 8   px;
+}
 
 @media (width <1200px) {
     .catalog__filter-button {
@@ -25,7 +29,6 @@
 .more-filters {
     min-width: 300px !important;
     max-width: 300px;
-    padding-left: 0;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -34,6 +37,12 @@
         padding-bottom: 5px;
         font-size: 16px;
     }
+
+@media (width < 1200px) {
+    .more-filters {
+        padding-left: 0;
+    }
+}
 
 
 
