@@ -7,7 +7,7 @@
         min-width: 100%;
     }
 
-@media (1300px <= width) {
+@media (768px <= width) {
     .filter .bx_filter_parameters_box:nth-child(1) {
         min-width: 200px !important;
         max-width: 200px;
