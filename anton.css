@@ -215,6 +215,14 @@
 }
 
 
+@media (max-width: 767px) {
+    .filtering {
+        padding-top: 16px;
+        gap: 16px;
+    }
+}
+
+
 
 .slideshow {
 
