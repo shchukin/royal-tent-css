@@ -68,6 +68,9 @@
 }
 
 
+.project__selected-filters {
+
+}
 
 .project__grid {
     display: grid;
@@ -90,6 +93,35 @@
         .project__tile:first-child {
             margin-top: 0;
         }
+}
+
+
+
+
+.button,
+.button:hover,
+.button:active {
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+    padding: 10px 18px;
+    min-width: 100px;
+    background-color: #082340;
+    border-radius: 0;
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.button--tag {
+    
 }
 
 
