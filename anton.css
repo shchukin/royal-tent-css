@@ -360,7 +360,8 @@
             text-align: left;
             color: #000000;
         }
-            .preview__link {
+            .preview__link,
+            .preview__link:hover {
                 color: inherit;
             }
 
@@ -585,6 +586,7 @@
 
         .preview__body {
             /*padding: 18px 16px 20px;*/
+            padding-top: 13px;
         }
             .preview__heading,
             #new_dizain h2.preview__heading { /* конфликт */
