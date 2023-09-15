@@ -1,0 +1,47 @@
+
+
+#modal {
+    display: none;
+    padding: 0;
+    opacity: 0;
+    transform: translateX(80px);
+    transition: all 0.6s ease;
+    overflow-y: hidden;
+    border: 2px solid #C7B27F;
+}
+
+#modal {
+    max-width: 1030px;
+    max-height: 813px;
+}
+
+.fancybox-bg,
+.fancybox-inner,
+.fancybox-outer,
+.fancybox-stage {
+    position: fixed !important;
+}
+
+.fancybox-slide--complete #modal {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.fancybox-button {
+    padding: 0 !important;
+}
+
+.fancybox-button svg {
+    width: 20px;
+    height: 20px;
+    display: inline;
+}
+
+.fancybox-slide--html .fancybox-close-small {
+    right: 24px !important;
+    top: 25px !important;
+}
+
+.fancybox-slide--html .fancybox-close-small path {
+    fill: #C7B27F;
+}

@@ -1,0 +1,262 @@
+.block_grig{
+    margin-bottom:30px;
+    margin-top: 30px;
+}
+
+.grid {position: relative;
+    clear: both;
+    margin: 0 auto;
+    max-width: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+/* Common style */
+.grid figure {
+    position: relative;
+    overflow: hidden;
+    margin: .5%;
+    width: 32%;
+    max-width: 480px;
+    max-height: 360px;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    /*
+	margin-left: -5px;
+	margin-bottom: -5px;
+*/
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+.grid figure figcaption {
+    padding: 2em;
+    color: #fff;
+    /* 	text-transform: uppercase; */
+    font-size: 1em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.4+0,0+100;Neutral+Density */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.4) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.grid figure h2,
+.grid figure h3 {
+    word-spacing: -0.15em;
+    font-weight: 300;line-height: 30px;font-family: Avantbold, sans-serif;
+}
+
+.grid figure h2 span,
+.grid figure h3 span {
+    font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure h3,
+.grid figure p {
+    margin: 0;
+}
+
+/*-----------------*/
+/***** Apollo *****/
+/*-----------------*/
+
+figure.effect-apollo {
+    background: #082340;
+}
+
+figure.effect-apollo img {
+    opacity: 1;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale3d(1.05,1.05,1);
+    transform: scale3d(1.05,1.05,1);
+}
+
+figure.effect-apollo figcaption::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255,0.5);
+    content: '';
+    -webkit-transition: -webkit-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+    transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,-100%,0);
+}
+
+figure.effect-apollo p {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin: 2em 0;
+    margin-bottom: 0em;
+    padding: 2em;
+    text-align: left;
+    font-size:14px;
+    -webkit-transition: opacity 0.35s;
+    transition: opacity 0.35s;line-height:23px;
+    opacity:0;
+    bottom: 0px;
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.55) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.55) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.55) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#8c000000',GradientType=0 ); /* IE6-9 */
+
+}
+figure.effect-apollo:before,
+figure.effect-apollo:after {
+    transition:color 1s 1s linear;
+    -moz-transition:color 1s 1s linear;
+    -webkit-transition:color 1s 1s linear;
+    -o-transition:color 1s 1s linear;
+}
+figure.effect-apollo:hover:before {
+    border-left: 3px solid #c4af84;
+    content: '';
+    position: absolute;
+    left: 1em;
+    bottom: 1em;
+    height: calc(100% - 2.5em);
+    z-index: 1000;
+}
+figure.effect-apollo:hover:after {
+    border-bottom: 3px solid #c4af84;
+    content: '';
+    position: absolute;
+    left: 1em;
+    width: calc(100% - 3em);
+    bottom: 1em;
+    z-index: 1000;
+}
+
+figure.effect-apollo h2,
+figure.effect-apollo h3 {
+    text-align: left;
+}
+
+figure.effect-apollo:hover img {
+    opacity: 0.6;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scale3d(1,1,1);
+}
+
+figure.effect-apollo:hover figcaption::before {
+    -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+    transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+}
+
+figure.effect-apollo:hover p {
+    opacity: 1;
+    -webkit-transition-delay: 0.1s;
+    transition-delay: 0.1s;
+}
+
+
+@media (max-width:780px){
+
+    .grid figure{
+        width: 100%;
+        float: none;
+        margin: 0;
+        margin-bottom: 10px;
+        padding: 0;
+    }
+	figure.effect-apollo img {
+	    opacity: 0.6 !important;
+	    -webkit-transform: scale3d(1,1,1);
+	    transform: scale3d(1,1,1);
+	    width: 100%;
+	}
+	
+figure.effect-apollo:before {
+    border-left: 3px solid #c4af84;
+    content: '';
+    position: absolute;
+    left: 1em;
+    bottom: 1em;
+    height: calc(100% - 2.5em);
+    z-index: 1000;
+}
+figure.effect-apollo:after {
+    border-bottom: 3px solid #c4af84;
+    content: '';
+    position: absolute;
+    left: 1em;
+    width: calc(100% - 3em);
+    bottom: 1em;
+    z-index: 1000;
+}	
+.grid	figure.effect-apollo figcaption {
+		font-size: 14px;
+		font-weight: bold;
+		padding-top: 30px !important;
+	}
+	
+	figure.effect-apollo figcaption::before {
+	    -webkit-transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+	    transform: scale3d(1.9,1.4,1) rotate3d(0,0,1,45deg) translate3d(0,100%,0);
+	    display: none;
+	}    
+    figure.effect-apollo p {
+        position: absolute;
+        left: 0em;
+        /* 	    margin: 2.5em; */
+        /* 	    padding: 0px; */
+        text-align: left;
+        /* 	    font-size: 12px; */
+        -webkit-transition: opacity 0.35s;
+        transition: opacity 0.35s;
+        text-shadow: 1px 1px 1px #000;
+        opacity: 1;
+        bottom: 0px;
+        color: #fff;
+        padding-left: 2em;
+        padding-right: 4em;
+    }
+    figure.effect-apollo p:before {
+        left: -1em;
+    }
+    figure.effect-apollo p:after {
+        left: -1em;
+    }
+       
+}

@@ -1,0 +1,738 @@
+.my_home_catal
+{
+    margin-top:30px;
+    margin-bottom:80px;
+}
+.my_catal img
+{
+    width:100%;
+    height: auto;
+    
+}
+.my_absolute
+{
+    position: absolute;
+    width:100%;
+    padding-left:30px;
+    box-sizing: border-box;
+}
+.my_descr, .my_ref
+{
+    float:left;
+    width:50%;
+    
+}
+.mrf1
+{
+    display:block;
+}
+.my_cat_title
+{
+    margin:0 auto;
+    font-size: 63px;
+    font-family: futural;
+    line-height: 70px;
+    color:#000;
+    text-transform: uppercase;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.my_cat_text
+{
+    margin:0 auto;
+    font-size: 23px;
+    font-family: futural;
+    line-height: 30px;
+    color:#333;
+    max-width: 600px;
+    text-align: center;
+    margin-top: 80px;
+    margin-top:30px;
+}
+.my_z1
+{
+    display: block;
+    width:275px;
+    height: 88px;
+    background: url(/local/images/btn1.png) no-repeat center center;
+    margin: 160px auto;
+    color:#fff;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: futural;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 87px;
+}
+
+.mrf1:hover .my_z1
+{
+    color:#000; 
+    background: url(/local/images/btn2.png) no-repeat center center;
+}
+.my_z2
+{
+    display: block;
+    width:275px;
+    height: 88px;
+    background: url(/local/images/btn2.png) no-repeat center center;
+    margin: 160px auto;
+    color:#000;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: futural;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 87px;
+}
+.my_z2:hover
+{
+    color:#000; 
+}
+
+.my_ban_img img
+{
+    width:100%;
+    height: auto;
+    max-width: 360px;
+}
+.my_ban_img
+{
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 45%;
+    float:left;
+}
+.my_ban_text
+{
+    width:55%;
+    float: left;
+    padding-top:30px;
+}
+.my_b_text1
+{
+    font-size: 36px;
+    font-family: futural;
+    line-height: 46px;
+    margin-bottom: 30px;
+}
+.my_b_text2
+{
+    font-size: 18px;
+    font-family: futural;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+.my_b_ref
+{
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff!important;
+    text-transform: uppercase;
+    display: block;
+    width:250px;
+    background: #C4AF84;
+    font-size: 15px;
+    font-family: futural-demi;
+    text-decoration: none;
+}
+.my_ban1
+{
+    margin-top:100px;
+   width:100%;
+}
+.my_flash
+{
+    width:100%;
+    margin-top:100px;
+    margin-bottom:50px;
+}
+.my_flash img
+{
+    width:100%;
+    height: auto;
+}
+#new_dizain h2
+{
+    font-size:36px;
+    line-height: 46px;
+    text-transform: uppercase;
+    font-family: futural;
+    text-align: center;
+    width:100%;
+    margin-bottom:50px;
+}
+#my_proj a.btn.prev
+{
+    width:48px;
+    height: 48px;
+    text-indent: -9999px;
+    background: url(/local/images/prev.jpg) no-repeat center center;
+}
+#my_proj a.btn.prev:hover
+{
+    background: url(/local/images/prev_h.jpg) no-repeat center center;
+}
+#my_proj a.btn.next
+{
+    width:48px;
+    height: 48px;
+    text-indent: -9999px;
+    background: url(/local/images/next.jpg) no-repeat center center;
+}
+#my_proj a.btn.next:hover
+{
+    background: url(/local/images/next_h.jpg) no-repeat center center;
+}
+.my_cap1
+{
+    font-size: 36px;
+    font-family: futural;
+    line-height: 46px;
+    margin-bottom: 30px;
+    color:#000;
+    text-align: left!important;
+}
+#my_proj .name_video
+{
+    font-size: 18px;
+    color:#000!important;
+    font-family: futural;
+    line-height: 20px;
+    height:70px;
+}
+#my_proj .item
+{
+    font-size: 16px;
+    font-family: futural-light;
+    line-height: 18px;
+    min-height: 350px;
+    
+}
+.my_btn_white
+{
+    color:#fff;
+    text-transform: uppercase;
+    font-size:11px;
+    font-family: futural-demi;
+    text-align:center;
+    width:140px;
+    line-height: 20px;
+    border:0;
+    background: #0F1D45;
+    float:right;
+    margin-right: 0px;
+}
+.my_btn_white:hover
+{
+    background: #C4AF84;
+}
+.my_prj_img
+{
+    height: 160px;
+    width:auto;
+}
+.my_podbor
+{
+    margin-top:30px;
+    width:100%;
+    background: #F8F9F9;
+    padding-top:50px;
+    padding-bottom: 30px;
+    
+}
+.podbor_wrap
+{
+    padding-left:15px;
+    padding-right: 15px;
+    font-family: futural;
+
+}
+.podb_left
+{
+    width:65%;
+    float:left;
+    padding-right: 50px;
+    box-sizing: border-box;
+}
+.podb_right
+{
+    width:35%;
+    float:left;
+    padding-top:180px;
+}
+.pod_text1
+{
+    margin-top:-30px;
+    font-size:18px;
+    margin-bottom:30px;
+    line-height: 22px;
+}
+.my_space
+{
+    padding-top:40px;
+    padding-bottom:40px;
+}
+.pod_foto
+{
+    padding-right: 30px;
+    float:left;
+    width: 30%;
+    
+}
+.info1 .title_my a
+{
+    font-family: futural-light;
+    padding-right:10px;
+    box-sizing: border-box;
+}
+.pod_text_block
+{
+    float:left;
+    
+    width:70%;
+    padding-top:30px;
+    
+    
+    
+}
+.pod_text2
+{
+    font-size: 21px;
+    line-height: 25px;
+    padding-bottom: 10px;
+}
+.pod_text3
+{
+    margin-top:7px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    line-height: 22px;
+    
+}
+.pod_text4
+{
+    font-family: futural-light;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.pod_fone1
+{
+    font-family: futural-demi;
+    font-size: 30px;
+    line-height: 35px;
+    margin-bottom: 10px;
+}
+.pod_fone2
+{
+    font-family: futural;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 10px;
+}
+.pod_fone3
+{
+    font-family: futural;
+    font-size: 24px;
+    line-height: 35px;
+    
+}
+.pod_fone
+{
+    padding-left: 55px;
+    background: url(/local/images/phone.fw.png) no-repeat top left;
+}
+.my_karta
+{
+    width:100%;
+    margin-top:50px;
+    margin-bottom: -45px;
+}
+.my_karta img
+{
+    width: 100%;
+    height: auto;
+}
+.sh
+{
+    float:left;
+    width:20px;
+    height: 20px;
+    border-radius: 10px;
+    border:1px solid #333333;
+    text-align: center;
+    color:#333333;
+    line-height: 18px;
+    font-size:14px;
+    font-family: futural;
+    margin-left:20px;
+    cursor: pointer;
+}
+.sh:hover
+{
+    background: #A10606;
+    color:#fff;
+}
+.n-1
+{
+    margin-left:25px;
+}
+.n-2
+{
+    margin-left:15px;
+}
+.n-3
+{
+    margin-left:22px;
+}
+.n-5
+{
+    margin-left:22px;
+}
+.n-8
+{
+    margin-left:140px;
+}
+.n-9
+{
+    margin-left:25px;
+}
+.n-10
+{
+    margin-left:22px;
+}
+.n-11
+{
+    margin-left:28px;
+}
+.n-12
+{
+    margin-left:22px;
+}
+.n-13
+{
+    margin-left:16px;
+}
+.n-14
+{
+    margin-left:24px;
+}
+.n-15
+{
+    margin-left:42px;
+}
+.n-16
+{
+    margin-left:38px;
+}
+.n-17
+{
+    margin-left:27px;
+}
+
+.l_shater
+{
+    width:100%;
+    max-width: 872px;
+    float:left;
+    font-family: futural;
+}
+.r_shater
+{
+    width:100%;
+    max-width: 258px;
+    float:left;
+    font-family: futural;
+    margin-left:20px;
+}
+.sh_title
+{
+    font-size: 36px;
+    line-height: 1.5em;
+}
+.sh_text
+{
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-bottom:50px;
+    margin-top:20px;
+}
+.sh_r_title
+{
+    font-family: futural-demi;
+    font-size: 20px;
+    line-height: 1.5em;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+.sh_r_text
+{
+    font-size: 14px;
+    line-height: 1.5em;
+}
+.sh_r_text a
+{
+    font-size: 14px;
+    line-height: 1.5em;
+    
+}
+.sh_uzel:hover
+{
+    color:#A10606;
+    cursor:pointer;
+}
+.my_popup
+{
+    position: absolute;
+    display: none;
+    margin-top:-268px;
+    width:200px;
+    height: 250px;
+    background: #fff;
+    padding:10px;
+     box-shadow: 0px 0px 6px 0px #000000;
+    
+}
+.my_popup img
+{
+    max-width: 180px;
+    max-height: 120px;
+}
+.sh:hover .my_popup
+{
+    display:block;
+}
+.pop_name
+{
+    font-family: futural;
+    font-size: 18px;
+    color:#000;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-top:10px;
+    height: 60px;
+    text-align: left;
+}
+.pop_price
+{
+    width:48%;
+    font-size: 15px;
+    color:#000;
+    font-family: futural;
+    line-height: 18px;
+    float:left;
+    text-align: left;
+    
+}
+.pop_price span
+{
+    font-family: futural-demi;
+}
+.pop_btn
+{
+    float:right;
+    padding-left:15px;
+    padding-right:15px;
+    display: block;
+    background: #C3AF83;
+    color:#fff;
+    font-size:11px;
+    text-transform: uppercase;
+    font-family: futural-demi;
+    padding-top:8px;
+    padding-bottom: 8px;
+}
+
+
+@media screen and (max-width: 1500px)
+{
+    .my_cat_title
+    {
+        margin-top: 80px;
+    }
+    .my_z1, .my_z2
+    {
+        margin-top:130px;
+    }
+}
+@media screen and (max-width: 1200px)
+{
+    .my_cat_title
+    {
+        margin-top: 50px;
+        font-size: 50px;
+        line-height: 60px;
+    }
+    .my_z1, .my_z2
+    {
+        margin-top:100px;
+    }
+    .my_cat_text
+    {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 1024px)
+{
+    .my_cat_title
+    {
+        margin-top: 30px;
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .my_z1, .my_z2
+    {
+        margin-top:60px;
+    }
+    .my_cat_text
+    {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .podb_left {
+                width: 100%;
+                float: none;
+                padding-right: 0px;
+                
+            }
+    .podb_right {
+        clear: left;
+                width: 100%;
+                float: none;
+                padding-top: 30px;
+            }
+}
+@media screen and (max-width: 900px)
+{
+    .sh_osn_image
+    {
+        display:none;
+    }
+    .l_shater, .r_shater
+    {
+        width:100%;
+    }
+    
+}
+@media screen and (max-width: 768px)
+{
+    .my_cat_title
+    {
+        margin-top: 25px;
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .my_ban_img, .my_ban_text
+    {
+        width:100%;
+        float:none;
+        padding-left:40px;
+        padding-right: 40px;
+    }
+    
+    .my_z1, .my_z2
+    {
+        margin-top:60px;
+        width:150px;
+        height: 48px;
+        line-height: 46px;
+        background-size: 100% 100%;
+    }
+    .my_cat_text
+    {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top:0;
+    }
+    .banners-small .item .title1
+    {
+        padding-top:20px;
+    }
+}
+@media screen and (max-width: 600px)
+{
+    .my_cat_title
+    {
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .my_z1, .my_z2
+    {
+        margin-top:40px;
+        width:120px;
+        height: 38px;
+        font-size: 18px;
+        line-height: 36px;
+        background-size: 100% 100%;
+    }
+    .my_cat_text
+    {
+        font-size: 12px;
+        line-height: 14px;
+        margin-top:0;
+    }
+    .pod_foto
+    {
+        width:100%;
+        text-align: center;
+        padding-right: 0;
+    }
+    .pod_text_block
+    {
+        margin-left:10%;
+        width: 80%;
+        float:none;
+        padding-right: 0;
+    }
+    
+}
+@media screen and (max-width: 400px)
+{
+    .my_cat_title
+    {
+        margin-top: 30px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .my_z1, .my_z2
+    {
+        margin-top:30px;
+        width:120px;
+        height: 38px;
+        font-size: 18px;
+        line-height: 36px;
+        background-size: 100% 100%;
+    }
+    .my_cat_text
+    {
+        font-size: 12px;
+        line-height: 14px;
+        margin-top:0;
+        display: none;
+    }
+    
+}
+.my_dop1
+{
+    opacity: 0.8;
+}
+.my_dop1:hover
+{
+    opacity: 1.0;
+}
+.info .phone
+{
+    padding-left: 50px;
+    background: url(/local/images/phone.fw.png) no-repeat left top;
+}
+.banners-big .flexslider, .banners-big .slides{height:500px;overflow:hidden;}
+.banners-big .slides > li{height:500px;font-size:16px;line-height:20px;overflow:hidden;}
+.banners-big .slides .text{height:500px;line-height:575px;padding:0;}
+.video_block
+{
+    margin-top:100px;
+}
