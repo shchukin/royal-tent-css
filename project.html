@@ -1263,23 +1263,7 @@
 
     <!--    if (! CSite::inDir( SITE_DIR . "index-1.php" ) && !CSite::inDir( SITE_DIR . "wends.php" )) {-->
     <div role="main" class="main dss" style="padding-bottom: 474px;">
-        <section class="page-top" style="padding: 26px 0 0px;">
-            <div class="row">
-                <div class="maxwidth-theme" id="new_dizain">
-                    <div class="col-md-12">
-                        <div class="row">
-                            <div class="col-md-12">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <h1 style="font-size: 36px; font-weight: 600; font-family: &#39;Open-sans&#39;, sans-serif;">Глобальный охват: наши проекты по всему миру</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+
         <div class="container">
 
             <div class="row ff">
@@ -1297,9 +1281,9 @@
                             <script src="anton.js"></script>
 
 
-                            <div class="page-title">
+                            <h1 class="page-title">
                                 Глобальный охват: наши проекты по всему миру
-                            </div>
+                            </h1>
 
                             <div class="filters">
                                 <button class="filters__handler" type="button">
@@ -1409,14 +1393,44 @@
                                     <div class="filters__item">
                                         <div class="param">
                                             <button class="param__handler" type="button">
-                                                Площадь, м²
+                                                По сезону
                                             </button>
                                             <div class="param__dropdown">
                                                 <div class="param__widget">
-                                                    <div class="space">
-                                                        <!-- temp -->
-                                                        <img src="temp/space.png" alt="" style="vertical-align: top; width: 167px !important; height: 62px !important; object-fit: cover; opacity: 0.25">
-                                                        <!-- /temp -->
+
+                                                    <div class="check-list">
+                                                        <div class="check-list__item">
+                                                            <label>
+                                                                <span class="bx_filter_input_checkbox">
+                                                                    <input type="checkbox">
+                                                                    <span class="bx_filter_param_text">Весна (<span>1</span>)</span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="check-list__item">
+                                                            <label>
+                                                                <span class="bx_filter_input_checkbox">
+                                                                    <input type="checkbox">
+                                                                    <span class="bx_filter_param_text">Лето (<span>1</span>)</span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="check-list__item">
+                                                            <label>
+                                                                <span class="bx_filter_input_checkbox">
+                                                                    <input type="checkbox">
+                                                                    <span class="bx_filter_param_text">Осень (<span>1</span>)</span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="check-list__item">
+                                                            <label>
+                                                                <span class="bx_filter_input_checkbox">
+                                                                    <input type="checkbox">
+                                                                    <span class="bx_filter_param_text">Зима (<span>1</span>)</span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1425,7 +1439,53 @@
                                     <div class="filters__item">
                                         <div class="param">
                                             <button class="param__handler" type="button">
-                                                Сезон
+                                                Направления
+                                            </button>
+                                            <div class="param__dropdown">
+                                                <div class="param__widget">
+
+                                                    <div class="check-list">
+                                                        <div class="check-list__item">
+                                                            <label>
+                                                                <span class="bx_filter_input_checkbox">
+                                                                    <input type="checkbox">
+                                                                    <span class="bx_filter_param_text">Весна (<span>1</span>)</span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="check-list__item">
+                                                            <label>
+                                                                <span class="bx_filter_input_checkbox">
+                                                                    <input type="checkbox">
+                                                                    <span class="bx_filter_param_text">Лето (<span>1</span>)</span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="check-list__item">
+                                                            <label>
+                                                                <span class="bx_filter_input_checkbox">
+                                                                    <input type="checkbox">
+                                                                    <span class="bx_filter_param_text">Осень (<span>1</span>)</span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="check-list__item">
+                                                            <label>
+                                                                <span class="bx_filter_input_checkbox">
+                                                                    <input type="checkbox">
+                                                                    <span class="bx_filter_param_text">Зима (<span>1</span>)</span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filters__item">
+                                        <div class="param">
+                                            <button class="param__handler" type="button">
+                                                По годам
                                             </button>
                                             <div class="param__dropdown">
                                                 <div class="param__widget">
@@ -1471,796 +1531,19 @@
                                 </div>
                                 <div class="filters__options">
                                     <div class="filters__addon">
-                                        <label>
-                                            <span class="bx_filter_input_checkbox">
-                                                <input type="checkbox">
-                                                <span class="bx_filter_param_text">С видео</span>
-                                            </span>
+                                        <label class="choice choice--checkbox">
+                                            <input class="choice__widget" type="checkbox" checked>
+                                            <i class="choice__icon" role="presentation"></i>
+                                            <span class="choice__label">С видео</span>
                                         </label>
                                     </div>
                                     <div class="filters__addon">
-                                        <label>
-                                            <span class="bx_filter_input_checkbox">
-                                                <input type="checkbox">
-                                                <span class="bx_filter_param_text">С доп. услугами</span>
-                                            </span>
+                                        <label class="choice choice--checkbox">
+                                            <input class="choice__widget" type="checkbox" checked>
+                                            <i class="choice__icon" role="presentation"></i>
+                                            <span class="choice__label">С доп. услугами</span>
                                         </label>
                                     </div>
-                                </div>
-                            </div>
-
-                            <div class="filter">
-                                <div class="bx_filter_section row">
-                                    <form name="arrFilter_form" action="/project/photo/" method="get" class="smartfilter">
-                                        <div class="select bx_filter_parameters_box  col-md-12" data-id="484" data-field="LOCATION_DICTIONARY">
-                                            <span class="bx_filter_container_modef"></span>
-                                            <div class="bx_filter_parameters_box_title" onclick="smartFilter.hideFilterProps(this)">
-                                                Локация
-                                            </div>
-                                            <div class="bx_filter_block">
-                                                <div class="bx_filter_parameters_box_container">
-                                                    <div class="row">
-                                                        <label data-role="label_arrFilter_484_2493670863" class="bx_filter_param_label col-md-12 " for="arrFilter_484_2493670863">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14548"
-                                                            value="Y"
-                                                            name="arrFilter_484_2493670863"
-                                                            id="arrFilter_484_2493670863"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Актау">г. Актау																													(<span data-role="count_arrFilter_484_2493670863">1</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_3139730157" class="bx_filter_param_label col-md-12 " for="arrFilter_484_3139730157">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14521"
-                                                            value="Y"
-                                                            name="arrFilter_484_3139730157"
-                                                            id="arrFilter_484_3139730157"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Байкальск">г. Байкальск																													(<span data-role="count_arrFilter_484_3139730157">1</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_3424864891" class="bx_filter_param_label col-md-12 " for="arrFilter_484_3424864891">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14520"
-                                                            value="Y"
-                                                            name="arrFilter_484_3424864891"
-                                                            id="arrFilter_484_3424864891"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Витебск">г. Витебск																													(<span data-role="count_arrFilter_484_3424864891">2</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_1428822977" class="bx_filter_param_label col-md-12 " for="arrFilter_484_1428822977">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14523"
-                                                            value="Y"
-                                                            name="arrFilter_484_1428822977"
-                                                            id="arrFilter_484_1428822977"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Владивосток">г. Владивосток																													(<span data-role="count_arrFilter_484_1428822977">2</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_3410923106" class="bx_filter_param_label col-md-12 " for="arrFilter_484_3410923106">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14524"
-                                                            value="Y"
-                                                            name="arrFilter_484_3410923106"
-                                                            id="arrFilter_484_3410923106"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Геленджик">г. Геленджик																													(<span data-role="count_arrFilter_484_3410923106">1</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_3158949620" class="bx_filter_param_label col-md-12 " for="arrFilter_484_3158949620">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14525"
-                                                            value="Y"
-                                                            name="arrFilter_484_3158949620"
-                                                            id="arrFilter_484_3158949620"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Дзержинск">г. Дзержинск																													(<span data-role="count_arrFilter_484_3158949620">1</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_625012558" class="bx_filter_param_label col-md-12 " for="arrFilter_484_625012558">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14526"
-                                                            value="Y"
-                                                            name="arrFilter_484_625012558"
-                                                            id="arrFilter_484_625012558"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Дмитров">г. Дмитров																													(<span data-role="count_arrFilter_484_625012558">1</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_4100320298" class="bx_filter_param_label col-md-12 " for="arrFilter_484_4100320298">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14551"
-                                                            value="Y"
-                                                            name="arrFilter_484_4100320298"
-                                                            id="arrFilter_484_4100320298"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Дубай">г. Дубай																													(<span data-role="count_arrFilter_484_4100320298">4</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_1380442072" class="bx_filter_param_label col-md-12 " for="arrFilter_484_1380442072">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14527"
-                                                            value="Y"
-                                                            name="arrFilter_484_1380442072"
-                                                            id="arrFilter_484_1380442072"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Екатеринбург">г. Екатеринбург																													(<span data-role="count_arrFilter_484_1380442072">2</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_3271082569" class="bx_filter_param_label col-md-12 " for="arrFilter_484_3271082569">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14528"
-                                                            value="Y"
-                                                            name="arrFilter_484_3271082569"
-                                                            id="arrFilter_484_3271082569"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Ереван">г. Ереван																													(<span data-role="count_arrFilter_484_3271082569">1</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_3053449951" class="bx_filter_param_label col-md-12 " for="arrFilter_484_3053449951">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14529"
-                                                            value="Y"
-                                                            name="arrFilter_484_3053449951"
-                                                            id="arrFilter_484_3053449951"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Истра">г. Истра																													(<span data-role="count_arrFilter_484_3053449951">1</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_3577248570" class="bx_filter_param_label col-md-12 " for="arrFilter_484_3577248570">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14530"
-                                                            value="Y"
-                                                            name="arrFilter_484_3577248570"
-                                                            id="arrFilter_484_3577248570"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Казань">г. Казань																													(<span data-role="count_arrFilter_484_3577248570">4</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_2722057132" class="bx_filter_param_label col-md-12 " for="arrFilter_484_2722057132">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14531"
-                                                            value="Y"
-                                                            name="arrFilter_484_2722057132"
-                                                            id="arrFilter_484_2722057132"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Калуга">г. Калуга																													(<span data-role="count_arrFilter_484_2722057132">3</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_993401366" class="bx_filter_param_label col-md-12 " for="arrFilter_484_993401366">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14532"
-                                                            value="Y"
-                                                            name="arrFilter_484_993401366"
-                                                            id="arrFilter_484_993401366"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Краснодар">г. Краснодар																													(<span data-role="count_arrFilter_484_993401366">1</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_1278290560" class="bx_filter_param_label col-md-12 " for="arrFilter_484_1278290560">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14533"
-                                                            value="Y"
-                                                            name="arrFilter_484_1278290560"
-                                                            id="arrFilter_484_1278290560"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Минск">г. Минск																													(<span data-role="count_arrFilter_484_1278290560">17</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_3528834851" class="bx_filter_param_label col-md-12 " for="arrFilter_484_3528834851">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14534"
-                                                            value="Y"
-                                                            name="arrFilter_484_3528834851"
-                                                            id="arrFilter_484_3528834851"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Могилев">г. Могилев																													(<span data-role="count_arrFilter_484_3528834851">2</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_2773651381" class="bx_filter_param_label col-md-12 " for="arrFilter_484_2773651381">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14535"
-                                                            value="Y"
-                                                            name="arrFilter_484_2773651381"
-                                                            id="arrFilter_484_2773651381"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Москва">г. Москва																													(<span data-role="count_arrFilter_484_2773651381">60</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_1012653583" class="bx_filter_param_label col-md-12 " for="arrFilter_484_1012653583">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14536"
-                                                            value="Y"
-                                                            name="arrFilter_484_1012653583"
-                                                            id="arrFilter_484_1012653583"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Муром">г. Муром																													(<span data-role="count_arrFilter_484_1012653583">1</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_1264381593" class="bx_filter_param_label col-md-12 " for="arrFilter_484_1264381593">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14537"
-                                                            value="Y"
-                                                            name="arrFilter_484_1264381593"
-                                                            id="arrFilter_484_1264381593"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Нижний Новгород">г. Нижний Новгород																													(<span data-role="count_arrFilter_484_1264381593">2</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_3689149192" class="bx_filter_param_label col-md-12 " for="arrFilter_484_3689149192">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14538"
-                                                            value="Y"
-                                                            name="arrFilter_484_3689149192"
-                                                            id="arrFilter_484_3689149192"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Пересвет">г. Пересвет																													(<span data-role="count_arrFilter_484_3689149192">2</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_2900673438" class="bx_filter_param_label col-md-12 " for="arrFilter_484_2900673438">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14539"
-                                                            value="Y"
-                                                            name="arrFilter_484_2900673438"
-                                                            id="arrFilter_484_2900673438"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Ростов">г. Ростов																													(<span data-role="count_arrFilter_484_2900673438">1</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_2591682045" class="bx_filter_param_label col-md-12 " for="arrFilter_484_2591682045">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14540"
-                                                            value="Y"
-                                                            name="arrFilter_484_2591682045"
-                                                            id="arrFilter_484_2591682045"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Санкт-Петербург">г. Санкт-Петербург																													(<span data-role="count_arrFilter_484_2591682045">6</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_3984514411" class="bx_filter_param_label col-md-12 " for="arrFilter_484_3984514411">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14541"
-                                                            value="Y"
-                                                            name="arrFilter_484_3984514411"
-                                                            id="arrFilter_484_3984514411"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Солнечногорск">г. Солнечногорск																													(<span data-role="count_arrFilter_484_3984514411">1</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_1953991889" class="bx_filter_param_label col-md-12 " for="arrFilter_484_1953991889">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14542"
-                                                            value="Y"
-                                                            name="arrFilter_484_1953991889"
-                                                            id="arrFilter_484_1953991889"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Сочи">г. Сочи																													(<span data-role="count_arrFilter_484_1953991889">8</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_57719879" class="bx_filter_param_label col-md-12 " for="arrFilter_484_57719879">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14543"
-                                                            value="Y"
-                                                            name="arrFilter_484_57719879"
-                                                            id="arrFilter_484_57719879"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Ставрополь">г. Ставрополь																													(<span data-role="count_arrFilter_484_57719879">1</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_2635344356" class="bx_filter_param_label col-md-12 " for="arrFilter_484_2635344356">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14544"
-                                                            value="Y"
-                                                            name="arrFilter_484_2635344356"
-                                                            id="arrFilter_484_2635344356"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Тверь ">г. Тверь 																													(<span data-role="count_arrFilter_484_2635344356">1</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_3927120242" class="bx_filter_param_label col-md-12 " for="arrFilter_484_3927120242">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14545"
-                                                            value="Y"
-                                                            name="arrFilter_484_3927120242"
-                                                            id="arrFilter_484_3927120242"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Уфа">г. Уфа																													(<span data-role="count_arrFilter_484_3927120242">1</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_1931102408" class="bx_filter_param_label col-md-12 " for="arrFilter_484_1931102408">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14546"
-                                                            value="Y"
-                                                            name="arrFilter_484_1931102408"
-                                                            id="arrFilter_484_1931102408"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Химки">г. Химки																													(<span data-role="count_arrFilter_484_1931102408">1</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_69040222" class="bx_filter_param_label col-md-12 " for="arrFilter_484_69040222">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14547"
-                                                            value="Y"
-                                                            name="arrFilter_484_69040222"
-                                                            id="arrFilter_484_69040222"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="г. Якутск">г. Якутск																													(<span data-role="count_arrFilter_484_69040222">1</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_3819263321" class="bx_filter_param_label col-md-12 " for="arrFilter_484_3819263321">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14549"
-                                                            value="Y"
-                                                            name="arrFilter_484_3819263321"
-                                                            id="arrFilter_484_3819263321"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="Крым">Крым																													(<span data-role="count_arrFilter_484_3819263321">6</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_2204294332" class="bx_filter_param_label col-md-12 " for="arrFilter_484_2204294332">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14550"
-                                                            value="Y"
-                                                            name="arrFilter_484_2204294332"
-                                                            id="arrFilter_484_2204294332"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="Московская область">Московская область																													(<span data-role="count_arrFilter_484_2204294332">1</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_1835842960" class="bx_filter_param_label col-md-12 " for="arrFilter_484_1835842960">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14552"
-                                                            value="Y"
-                                                            name="arrFilter_484_1835842960"
-                                                            id="arrFilter_484_1835842960"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="Ростов на Дону">Ростов на Дону																													(<span data-role="count_arrFilter_484_1835842960">1</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_484_443256070" class="bx_filter_param_label col-md-12 " for="arrFilter_484_443256070">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="14553"
-                                                            value="Y"
-                                                            name="arrFilter_484_443256070"
-                                                            id="arrFilter_484_443256070"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="Смоленская область">Смоленская область																													(<span data-role="count_arrFilter_484_443256070">1</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="clb"></div>
-                                            </div>
-                                        </div>
-                                        <div class="select bx_filter_parameters_box  col-md-12" data-id="469" data-field="DISIGN">
-                                            <span class="bx_filter_container_modef"></span>
-                                            <div class="bx_filter_parameters_box_title" onclick="smartFilter.hideFilterProps(this)">
-                                                Тип конструкции
-                                            </div>
-                                            <div class="bx_filter_block">
-                                                <div class="bx_filter_parameters_box_container">
-                                                    <div class="row">
-                                                        <label data-role="label_arrFilter_469_1015124755" class="bx_filter_param_label col-md-12 " for="arrFilter_469_1015124755">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="249"
-                                                            value="Y"
-                                                            name="arrFilter_469_1015124755"
-                                                            id="arrFilter_469_1015124755"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="Ангар">Ангар																													(<span data-role="count_arrFilter_469_1015124755">2</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_469_892854072" class="bx_filter_param_label col-md-12 " for="arrFilter_469_892854072">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="245"
-                                                            value="Y"
-                                                            name="arrFilter_469_892854072"
-                                                            id="arrFilter_469_892854072"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="Арочный шатер">Арочный шатер																													(<span data-role="count_arrFilter_469_892854072">86</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_469_2003519797" class="bx_filter_param_label col-md-12 " for="arrFilter_469_2003519797">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="260"
-                                                            value="Y"
-                                                            name="arrFilter_469_2003519797"
-                                                            id="arrFilter_469_2003519797"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="Биоклиматическая пергола">Биоклиматическая пергола																													(<span data-role="count_arrFilter_469_2003519797">5</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_469_2889780866" class="bx_filter_param_label col-md-12 " for="arrFilter_469_2889780866">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="246"
-                                                            value="Y"
-                                                            name="arrFilter_469_2889780866"
-                                                            id="arrFilter_469_2889780866"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="Деревянный шатер">Деревянный шатер																													(<span data-role="count_arrFilter_469_2889780866">21</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_469_1548098294" class="bx_filter_param_label col-md-12 " for="arrFilter_469_1548098294">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="250"
-                                                            value="Y"
-                                                            name="arrFilter_469_1548098294"
-                                                            id="arrFilter_469_1548098294"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="Индивидуальный проект">Индивидуальный проект																													(<span data-role="count_arrFilter_469_1548098294">2</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_469_1267114885" class="bx_filter_param_label col-md-12 " for="arrFilter_469_1267114885">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="248"
-                                                            value="Y"
-                                                            name="arrFilter_469_1267114885"
-                                                            id="arrFilter_469_1267114885"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="Классический шатер">Классический шатер																													(<span data-role="count_arrFilter_469_1267114885">2</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_469_3677994516" class="bx_filter_param_label col-md-12 " for="arrFilter_469_3677994516">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="247"
-                                                            value="Y"
-                                                            name="arrFilter_469_3677994516"
-                                                            id="arrFilter_469_3677994516"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="Сферический шатер">Сферический шатер																													(<span data-role="count_arrFilter_469_3677994516">22</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_469_7109027" class="bx_filter_param_label col-md-12 " for="arrFilter_469_7109027">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="261"
-                                                            value="Y"
-                                                            name="arrFilter_469_7109027"
-                                                            id="arrFilter_469_7109027"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="Тентовая пергола">Тентовая пергола																													(<span data-role="count_arrFilter_469_7109027">5</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="clb"></div>
-                                            </div>
-                                        </div>
-                                        <div class="select bx_filter_parameters_box  col-md-12" data-id="460" data-field="SQUARE">
-                                            <span class="bx_filter_container_modef"></span>
-                                            <div class="bx_filter_parameters_box_title" onclick="smartFilter.hideFilterProps(this)">
-                                                Площадь, м2
-                                            </div>
-                                            <div class="bx_filter_block">
-                                                <div class="bx_filter_parameters_box_container">
-                                                    <div class="bx_filter_parameters_box_container_block">
-                                                        <div class="bx_filter_input_container">
-                                                            <input
-                                                                    class="min-price"
-                                                                    type="text"
-                                                                    name="arrFilter_460_MIN"
-                                                                    id="arrFilter_460_MIN"
-                                                                    value=""
-                                                                    size="5"
-                                                                    onkeyup="smartFilter.keyup(this)"
-                                                            />
-                                                        </div>
-                                                    </div>
-                                                    <div class="bx_filter_parameters_box_container_block">
-                                                        <div class="bx_filter_input_container">
-                                                            <input
-                                                                    class="max-price"
-                                                                    type="text"
-                                                                    name="arrFilter_460_MAX"
-                                                                    id="arrFilter_460_MAX"
-                                                                    value=""
-                                                                    size="5"
-                                                                    onkeyup="smartFilter.keyup(this)"
-                                                            />
-                                                        </div>
-                                                    </div>
-                                                    <div style="clear: both;"></div>
-
-                                                    <div class="bx_ui_slider_track" id="drag_track_460">
-                                                        <div class="bx_ui_slider_part p1"><span>12</span></div>
-                                                        <div class="bx_ui_slider_part p2"><span>1759</span></div>
-                                                        <div class="bx_ui_slider_part p3"><span>3506</span></div>
-                                                        <div class="bx_ui_slider_part p4"><span>5253</span></div>
-                                                        <div class="bx_ui_slider_part p5"><span>7000</span></div>
-
-                                                        <div class="bx_ui_slider_pricebar_VD" style="left: 0;right: 0;" id="colorUnavailableActive_460"></div>
-                                                        <div class="bx_ui_slider_pricebar_VN" style="left: 0;right: 0;" id="colorAvailableInactive_460"></div>
-                                                        <div class="bx_ui_slider_pricebar_V" style="left: 0;right: 0;" id="colorAvailableActive_460"></div>
-                                                        <div class="bx_ui_slider_range" id="drag_tracker_460" style="left: 0;right: 0;">
-                                                            <a class="bx_ui_slider_handle left" style="left:0;" href="javascript:void(0)" id="left_slider_460"></a>
-                                                            <a class="bx_ui_slider_handle right" style="right:0;" href="javascript:void(0)" id="right_slider_460"></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="clb"></div>
-                                            </div>
-                                        </div>
-                                        <div class="select bx_filter_parameters_box  col-md-12" data-id="462" data-field="SEASON">
-                                            <span class="bx_filter_container_modef"></span>
-                                            <div class="bx_filter_parameters_box_title" onclick="smartFilter.hideFilterProps(this)">
-                                                Сезон
-                                            </div>
-                                            <div class="bx_filter_block">
-                                                <div class="bx_filter_parameters_box_container">
-                                                    <div class="row">
-                                                        <label data-role="label_arrFilter_462_1163733943" class="bx_filter_param_label col-md-12 " for="arrFilter_462_1163733943">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="240"
-                                                            value="Y"
-                                                            name="arrFilter_462_1163733943"
-                                                            id="arrFilter_462_1163733943"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="Весна">Весна																													(<span data-role="count_arrFilter_462_1163733943">30</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_462_844765985" class="bx_filter_param_label col-md-12 " for="arrFilter_462_844765985">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="241"
-                                                            value="Y"
-                                                            name="arrFilter_462_844765985"
-                                                            id="arrFilter_462_844765985"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="Лето">Лето																													(<span data-role="count_arrFilter_462_844765985">66</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_462_2874362523" class="bx_filter_param_label col-md-12 " for="arrFilter_462_2874362523">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="242"
-                                                            value="Y"
-                                                            name="arrFilter_462_2874362523"
-                                                            id="arrFilter_462_2874362523"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="Осень">Осень																													(<span data-role="count_arrFilter_462_2874362523">12</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_462_3696523789" class="bx_filter_param_label col-md-12 " for="arrFilter_462_3696523789">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="243"
-                                                            value="Y"
-                                                            name="arrFilter_462_3696523789"
-                                                            id="arrFilter_462_3696523789"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="Зима">Зима																													(<span data-role="count_arrFilter_462_3696523789">8</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                        <label data-role="label_arrFilter_462_1110503342" class="bx_filter_param_label col-md-12 " for="arrFilter_462_1110503342">
-												<span class="bx_filter_input_checkbox">
-													<input
-                                                            type="checkbox"
-                                                            data-value="244"
-                                                            value="Y"
-                                                            name="arrFilter_462_1110503342"
-                                                            id="arrFilter_462_1110503342"
-                                                            onclick="smartFilter.click(this)"
-                                                    />
-													<span class="bx_filter_param_text" title="Всесезонный">Всесезонный																													(<span data-role="count_arrFilter_462_1110503342">33</span>)
-																											</span>
-												</span>
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                                <div class="clb"></div>
-                                            </div>
-                                        </div>
-                                        <!-- Вёрстка Антона -->
-                                        <div class="more-filters col-md-12">
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="with-video">
-                                                <label class="form-check-label" for="with-video">
-                                                    <span class="nobr">С видео</span>
-                                                </label>
-                                            </div>
-                                            <div class="form-check">
-                                                <input class="form-check-input" type="checkbox" id="with-additional-service">
-                                                <label class="form-check-label" for="with-additional-service">
-                                                    <span class="nobr">С доп. услугами</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <!--/Вёрстка Антона -->
-                                        <div class="clb"></div>
-                                        <div class="catalog__filter-button">
-                                            <a href="?locationId=all&countryId=all" class="link-del-filter">
-
-                                                <input class="link__text" type="submit" id="del_filter" name="del_filter" value="Сбросить"/>
-
-                                            </a>
-                                            <a href="" class="btn btn-default btn-sm">
-
-                                                <input class="link__text" type="submit" id="set_filter" name="set_filter" value="Показать"/>
-
-                                            </a>
-
-
-                                        </div>
-                                    </form>
                                 </div>
                             </div>
 
