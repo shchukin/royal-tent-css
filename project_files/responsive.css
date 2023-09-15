@@ -26,9 +26,9 @@
 /* SM */
 @media (max-width:991px){
 	.body_media{top:1px;} /* do not remove this hack! )) */
-	.banners-big .slides .img{display:none;}
-	.banners-big .slides .title{font-size:40px;line-height:46px;font-weight:normal;}
-	.banners-big .slides .text-block b{font-size:22px;line-height:27px;font-weight:normal;}
+	.banners-big .slideshow .img{display:none;}
+	.banners-big .slideshow .title{font-size:40px;line-height:46px;font-weight:normal;}
+	.banners-big .slideshow .text-block b{font-size:22px;line-height:27px;font-weight:normal;}
 	.banners-big .flex-direction-nav{display:none;}
 	.banners-small .item {height:70px;}
 	.banners-small .item .image{line-height:58px;}
@@ -93,7 +93,7 @@
 }
 
 @media (max-width:812px){
-	.logo-row .top-callback .email #request{display:none !important;}	
+	.logo-row .top-callback .email #request{display:none !important;}
 }
 
 /* XS */
@@ -129,11 +129,11 @@
 	.front h3.short{display:inline-block;}
 	.flex-direction-nav{display:none;}
 	.banners-big .flex-control-nav{display:none;}
-	.banners-big .flexslider, .banners-big .slides li{height:240px;}
-	.banners-big .slides .title{font-size:15px;line-height:12px;padding:0 0 10px 0;}
-	.banners-big .slides .text .inner{padding-top:30px;}
-	.banners-big .slides .text-block{margin-bottom:10px;}
-	.banners-big .slides .text-block, .banners-big .slides .text-block b{font-size:11px;line-height:18px;}
+	.banners-big .flexslider, .banners-big .slideshow li{height:240px;}
+	.banners-big .slideshow .title{font-size:15px;line-height:12px;padding:0 0 10px 0;}
+	.banners-big .slideshow .text .inner{padding-top:30px;}
+	.banners-big .slideshow .text-block{margin-bottom:10px;}
+	.banners-big .slideshow .text-block, .banners-big .slideshow .text-block b{font-size:11px;line-height:18px;}
 	.styled-block .row > div, .order-block .row > div{display:block;width:100%;}
 	.order-block .price{width: 100%;}
 	.order-block .price + .btn{margin-left:0;}
@@ -243,7 +243,7 @@
 	.logo-row .top-callback .phone .phone-number > div a{font-size:14px;}
 	.logo-row .logo img{max-width:100%;}
 	.logo-row .logo{width: 43%;}
-	
+
 }
 @media (max-width:430px){
 	/*.logo-row .top-callback .phone{top: -48px;} старый вариант*/

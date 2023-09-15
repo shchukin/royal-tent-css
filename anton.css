@@ -24,13 +24,13 @@
 }
 
 
-.slides {
+.slideshow {
 
 }
-    .slides__stage {
+    .slideshow__stage {
 
     }
-        .slides__item {
+        .slideshow__item {
             position: absolute;
             left: 0;
             top: 0;
@@ -40,12 +40,12 @@
             visibility: hidden;
         }
 
-        .slides__item--current {
+        .slideshow__item--current {
             z-index: 10;
             opacity: 1;
             visibility: visible;
         }
-            .slides__photo {
+            .slideshow__photo {
                 vertical-align: top;
                 width: 100%;
                 height: 100%;
@@ -53,11 +53,11 @@
                 background-color: #F1F1F1;
             }
 
-            .slides__photo:hover {
+            .slideshow__photo:hover {
                 filter: brightness(1.025) contrast(1.025);
             }
 
-    .slides__navigation {
+    .slideshow__navigation {
         position: absolute;
         z-index: 20;
         left: 0;
@@ -66,9 +66,9 @@
         display: flex;
         align-items: flex-start;
         justify-content: center;
-        pointer-events: none;
+        /*pointer-events: none;*/
     }
-        .slides__handler {
+        .slideshow__dot {
             position: relative;
             width: 32px;
             height: 32px;
@@ -77,7 +77,7 @@
             border: none;
             padding: 0;
         }
-            .slides__handler::before {
+            .slideshow__dot::before {
                 content: "";
                 position: absolute;
                 left: 0;
@@ -92,7 +92,10 @@
                 background-color: #949494;
             }
 
-            .slides__handler--current::before {
+        .slides__dot--current {
+
+        }
+            .slides__dot--current::before {
                 background-color: #FFFFFF;
             }
 
@@ -213,7 +216,7 @@
         .preview__gallery {
 
         }
-            .slides__photo {
+            .slideshow__photo {
 
             }
 
@@ -341,7 +344,7 @@
         .preview__gallery {
             aspect-ratio: 4 / 3;
         }
-            .slides__photo {
+            .slideshow__photo {
                 /*vertical-align: top;*/
                 /*width: 100%;*/
                 /*height: auto;*/

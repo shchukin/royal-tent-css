@@ -7,7 +7,7 @@
  * http://www.gnu.org/licenses/gpl-2.0.html
  *
  * Contributing author: Tyler Smith (@mbmufffin)
- * 
+ *
  */
 /* ====================================================================================================================
  * FONT-FACE
@@ -28,8 +28,8 @@
 .flex-slider a:focus {
   outline: none;
 }
-.slides,
-.slides > li,
+.slideshow,
+.slideshow > li,
 .flex-control-nav,
 .flex-direction-nav {
   margin: 0;
@@ -46,15 +46,15 @@
   margin: 0;
   padding: 0;
 }
-.flexslider .slides > li {
+.flexslider .slideshow > li {
   display: none;
   -webkit-backface-visibility: hidden;
 }
-.flexslider .slides img {
+.flexslider .slideshow img {
   width: 100%;
   display: block;
 }
-.flexslider .slides:after {
+.flexslider .slideshow:after {
   content: "\0020";
   display: block;
   clear: both;
@@ -62,13 +62,13 @@
   line-height: 0;
   height: 0;
 }
-html[xmlns] .flexslider .slides {
+html[xmlns] .flexslider .slideshow {
   display: block;
 }
-* html .flexslider .slides {
+* html .flexslider .slideshow {
   height: 1%;
 }
-.no-js .flexslider .slides > li:first-child {
+.no-js .flexslider .slideshow > li:first-child {
   display: block;
 }
 /* ====================================================================================================================
@@ -88,10 +88,10 @@ html[xmlns] .flexslider .slides {
   -o-box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
   box-shadow: '' 0 1px 4px rgba(0, 0, 0, 0.2);
 }
-.flexslider .slides {
+.flexslider .slideshow {
   zoom: 1;
 }
-.flexslider .slides img {
+.flexslider .slideshow img {
   height: auto;
 }
 .flex-viewport {

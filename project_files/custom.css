@@ -181,7 +181,7 @@ hr.goldline {
 .phone-desc.mb5{margin-bottom:5px !important;}
 .btn-default.white { background: #082340 !important;}
 .logo-row .top-callback .callback span {background: #fff !important;}
-.banners-big .slides .text-block, .banners-big .slides .title, .banners-big .slides .title a, .banners-big .slides .item:hover .title, .banners-big .slides .item:hover .title a {text-shadow: 2px 1px 5px #000;}
+.banners-big .slideshow .text-block, .banners-big .slideshow .title, .banners-big .slideshow .title a, .banners-big .slideshow .item:hover .title, .banners-big .slideshow .item:hover .title a {text-shadow: 2px 1px 5px #000;}
 /* .maxwidth-theme {max-width: 1260px !important;} */
 .catalog.detail .head .article {border-bottom: 1px dotted #ccc; width: 100%; display: block; color: #85878b !important; font-weight: 300 !important; margin-bottom: 2px; padding-bottom: 2px;}
 .catalog.detail .head .article > span {color:#555 !important; font-size: 12px !important; font-weight: 600 !important; float: right;}
@@ -1746,7 +1746,7 @@ i.i_guaranty{
 	.landing #video-bg video {
 		height:70vw;
 		top: 50% !important;
-	}	
+	}
 }
 @media (max-width:768px){
     .landing .teaser .breadcrumb li > a,
@@ -1761,7 +1761,7 @@ i.i_guaranty{
 	.landing #video-bg video {
 		height: 60vw;
 		top: 50% !important;
-	}	
+	}
     .landing.wedding #video-bg {
         background: #082340 url('/images/wedding_landing_bg.png') no-repeat center;
         background-size: cover;
@@ -1962,8 +1962,8 @@ i.i_guaranty{
         margin: 20px 0;
     }
     .banners-small.front .title {
-        font-size: 12px !important;	    
-    }    
+        font-size: 12px !important;
+    }
     .banners-small .item .image {
 	    width: 40px;
     }
@@ -2411,7 +2411,7 @@ border-bottom: 2px solid #212a4f!important;
 	height: 200px;
     width: max-content;
 	max-width:100%;
-	
+
 }
 @media (max-width:1300px) {
 }
@@ -2501,11 +2501,11 @@ border-bottom: 2px solid #212a4f!important;
 	}
 	.landing #video-bg video {
 		height: 75vw;
-	}	
+	}
 	.banners-small.front {
 		margin-left: 0px;
 		margin-right: 0px;
-	}	
+	}
 	.banners-small.front .items > div {
 		padding: 0px;
 	}

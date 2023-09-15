@@ -32,72 +32,12 @@
 
     }
 
-
-    /* Navigation using timeout */
-
-    /* This may need extra work if more than one autoscroll slideshow will appear on the page.
-     * Now we have one Interval for all slideshow and it should be rewritten the way
-     * each slideshow has it's own interval. But there is a problem that we don't
-     * have such thing as slideshow in JavaScript, they are just in DOM.
-     * So need to connect  "var timeout = setInterval"  with DOM so it can be
-     * clearInterval(timeout)  by clicking arrows or dots in DOM.
-     */
-
-    var timeout = setInterval(function () {
-        $('.slideshow--autoscroll').each(function () {
-            var $slideshow = $(this);
-            var current = $slideshow.find('.slideshow__item--current').index();
-            var total = $slideshow.find('.slideshow__item').length;
-
-            if (current + 1 === total) {
-                slide($slideshow, 0);
-            } else {
-                slide($slideshow, current + 1);
-            }
-        });
-    }, 5000);
-
-
-
-    /* Navigation using dots */
-
     $('.slideshow__dot').on('click', function () {
+        alert()
+
         slide( $(this).parents('.slideshow'), $(this).index());
-        clearInterval(timeout);
     });
 
-
-    /* Navigation using arrows */
-
-    $('.slideshow__control').on('click', function () {
-        var $this = $(this);
-        var $slideshow = $this.parents('.slideshow');
-        var current = $slideshow.find('.slideshow__item--current').index();
-        var total = $slideshow.find('.slideshow__item').length;
-        var slideTo = 0;
-
-
-        /* Sliding */
-
-        if( $this.hasClass('slideshow__control--next') ) {
-            if (current + 1 === total) {
-                return;
-            } else {
-                slideTo = current + 1;
-            }
-        }
-
-        if( $this.hasClass('slideshow__control--prev') ) {
-            if (current === 0) {
-                return;
-            } else {
-                slideTo = current - 1;
-            }
-        }
-
-        slide( $(this).parents('.slideshow'), slideTo);
-        clearInterval(timeout);
-    });
 
 
 })(jQuery);

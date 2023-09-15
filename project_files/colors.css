@@ -489,7 +489,7 @@ section.toggle.active > label {
 .detail .galery #slider.flexslider:hover .flex-direction-nav {
   background: #d8caae;
 }
-.detail .galery #carousel .slides li.flex-active-slide {
+.detail .galery #carousel .slideshow li.flex-active-slide {
   border-color: #cbb892;
 }
 .detail .reviews .item .review .icons:before {

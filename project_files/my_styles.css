@@ -7,7 +7,7 @@
 {
     width:100%;
     height: auto;
-    
+
 }
 .my_absolute
 {
@@ -20,7 +20,7 @@
 {
     float:left;
     width:50%;
-    
+
 }
 .mrf1
 {
@@ -69,7 +69,7 @@
 
 .mrf1:hover .my_z1
 {
-    color:#000; 
+    color:#000;
     background: url(/local/images/btn2.png) no-repeat center center;
 }
 .my_z2
@@ -89,7 +89,7 @@
 }
 .my_z2:hover
 {
-    color:#000; 
+    color:#000;
 }
 
 .my_ban_img img
@@ -210,7 +210,7 @@
     font-family: futural-light;
     line-height: 18px;
     min-height: 350px;
-    
+
 }
 .my_btn_white
 {
@@ -242,7 +242,7 @@
     background: #F8F9F9;
     padding-top:50px;
     padding-bottom: 30px;
-    
+
 }
 .podbor_wrap
 {
@@ -281,7 +281,7 @@
     padding-right: 30px;
     float:left;
     width: 30%;
-    
+
 }
 .info1 .title_my a
 {
@@ -292,12 +292,12 @@
 .pod_text_block
 {
     float:left;
-    
+
     width:70%;
     padding-top:30px;
-    
-    
-    
+
+
+
 }
 .pod_text2
 {
@@ -311,7 +311,7 @@
     margin-bottom: 5px;
     font-size: 18px;
     line-height: 22px;
-    
+
 }
 .pod_text4
 {
@@ -338,7 +338,7 @@
     font-family: futural;
     font-size: 24px;
     line-height: 35px;
-    
+
 }
 .pod_fone
 {
@@ -477,7 +477,7 @@
 {
     font-size: 14px;
     line-height: 1.5em;
-    
+
 }
 .sh_uzel:hover
 {
@@ -494,7 +494,7 @@
     background: #fff;
     padding:10px;
      box-shadow: 0px 0px 6px 0px #000000;
-    
+
 }
 .my_popup img
 {
@@ -525,7 +525,7 @@
     line-height: 18px;
     float:left;
     text-align: left;
-    
+
 }
 .pop_price span
 {
@@ -596,7 +596,7 @@
                 width: 100%;
                 float: none;
                 padding-right: 0px;
-                
+
             }
     .podb_right {
         clear: left;
@@ -615,7 +615,7 @@
     {
         width:100%;
     }
-    
+
 }
 @media screen and (max-width: 768px)
 {
@@ -632,7 +632,7 @@
         padding-left:40px;
         padding-right: 40px;
     }
-    
+
     .my_z1, .my_z2
     {
         margin-top:60px;
@@ -688,7 +688,7 @@
         float:none;
         padding-right: 0;
     }
-    
+
 }
 @media screen and (max-width: 400px)
 {
@@ -714,7 +714,7 @@
         margin-top:0;
         display: none;
     }
-    
+
 }
 .my_dop1
 {
@@ -729,9 +729,9 @@
     padding-left: 50px;
     background: url(/local/images/phone.fw.png) no-repeat left top;
 }
-.banners-big .flexslider, .banners-big .slides{height:500px;overflow:hidden;}
-.banners-big .slides > li{height:500px;font-size:16px;line-height:20px;overflow:hidden;}
-.banners-big .slides .text{height:500px;line-height:575px;padding:0;}
+.banners-big .flexslider, .banners-big .slideshow{height:500px;overflow:hidden;}
+.banners-big .slideshow > li{height:500px;font-size:16px;line-height:20px;overflow:hidden;}
+.banners-big .slideshow .text{height:500px;line-height:575px;padding:0;}
 .video_block
 {
     margin-top:100px;

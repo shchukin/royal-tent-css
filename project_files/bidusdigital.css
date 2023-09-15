@@ -1,5 +1,5 @@
 .BD_product {
-	
+
 }
 .BD_product h3,
 .BD_product h4 {
@@ -14,7 +14,7 @@
 	display: block;
 }
 .BD_product_main {
-	margin-bottom: 20px;	
+	margin-bottom: 20px;
 }
 .BD_product_options,
 .BD_product_image,
@@ -22,8 +22,8 @@
 	height: 500px;
 }
 .BD_product_options .option_item {
-	border: 2px solid #f2f2f2;	
-	padding: 20px;		
+	border: 2px solid #f2f2f2;
+	padding: 20px;
 	margin-bottom: 10px;
 	height: 160px;
 	white-space: nowrap;
@@ -33,7 +33,7 @@
 	cursor: pointer;
 	display: flex;
 	align-items: center;
-	justify-content: center;				
+	justify-content: center;
 }
 .BD_product_options .option_item .after {
 	display: none;
@@ -64,8 +64,8 @@
 	margin-bottom: 0px;
 }
 .BD_product_image {
-	border: 2px solid #f2f2f2;	
-	padding: 20px;	
+	border: 2px solid #f2f2f2;
+	padding: 20px;
 	position: relative;
 }
 .BD_product_image .label,
@@ -92,7 +92,7 @@
 	height: 100%;
 	display: flex;
 	justify-content: center;
-	align-items: center;		
+	align-items: center;
 }
 .BD_product .detail span.zoom {
 	left: 50% !important;
@@ -116,7 +116,7 @@
 	background: #17254f !important;
 }
 .BD_product .detail span.zoom i {
-	font-size: 24px !important;	
+	font-size: 24px !important;
 	top: 20px;
 }
 .BD_product .prices {
@@ -170,9 +170,9 @@
 	margin-top: 3px;
 }
 .BD_product_achives .achive_item {
-	border: 2px solid #f2f2f2;		
-	padding: 20px;		
-	margin-bottom: 10px;	
+	border: 2px solid #f2f2f2;
+	padding: 20px;
+	margin-bottom: 10px;
 	height: 117.5px;
 	font-size: 12px;
 	color: #989898;
@@ -260,7 +260,7 @@
 }
 .BD_product .BD_product_gallery h3 {
 	text-align: center;
-	color: #cbb892; 
+	color: #cbb892;
 	margin-bottom: 20px;
 }
 .BD_product .BD_product_gallery .img-thumbnail {
@@ -308,11 +308,11 @@
 	background: transparent;
 	border: 1px solid rgba(255,255,255,.1);
 }
-.BD_product .BD_product_gallery .gallery-widget .flexslider .slides.items li {
+.BD_product .BD_product_gallery .gallery-widget .flexslider .slideshow.items li {
 	height: 100%;
 	height: 630px;
 }
-.BD_product .BD_product_gallery .gallery-widget .flexslider .slides.items li a {
+.BD_product .BD_product_gallery .gallery-widget .flexslider .slideshow.items li a {
 	display: block;
 	height: 100%;
 	width: 100%;
@@ -352,10 +352,10 @@
 	font-weight: 400;
 	cursor: pointer;
 	height: 110px;
-	line-height: 105px;	
+	line-height: 105px;
 }
 .BD_product .BD_product_gallery .gallery-list .hide-all:hover {
-	border: 2px solid #cbb278;	
+	border: 2px solid #cbb278;
 }
 
 .BD_product_tabs.tabs .nav-tabs > li {
@@ -430,7 +430,7 @@
 	color: #212a4f;
 }
 .BD_product_extra .item {
-	padding: 20px;	
+	padding: 20px;
 	padding-bottom: 80px;
 	position: relative;
 	border: 2px solid #ccc;
@@ -453,8 +453,8 @@
 	transform: translate(-50%,-50%);
 }
 .BD_product_extra .item .title {
-	margin-bottom: 10px;	
-	font-size: 15px;	
+	margin-bottom: 10px;
+	font-size: 15px;
 	font-weight: 600;
 	text-align: center;
 }
@@ -506,7 +506,7 @@
 	color: #cbb278;
 }
 .BD_product_calltoaction {
-	min-height: 300px;	
+	min-height: 300px;
 	background: #17254f url('../images/calltoaction_bg.png') no-repeat center right;
 	background-size: 67%;
 }
@@ -516,7 +516,7 @@
 }
 .BD_product_calltoaction.sale {
 	background: #17254f url('../images/calltoaction_bg_sale.jpg') no-repeat center right;
-	background-size: 67%;	
+	background-size: 67%;
 }
 
 .BD_product_whyweare .b-item {
@@ -589,7 +589,7 @@
 	background: #fff;
 	border: 2px solid #f2f2f2;
 	top: 0;
-	left: 15px;	
+	left: 15px;
 	display: none;
 }
 .BD_calculator.active {
@@ -618,7 +618,7 @@
 }
 .BD_calculator h3:after {
 	background: url('/local/templates/aspro-scorp_royaltent/images/arrow-left-icon.svg') no-repeat center;
-	background-size: 6px auto;	
+	background-size: 6px auto;
 	position: absolute;
 	content: '';
 	left: -10px;
@@ -654,7 +654,7 @@
 .BD_calculator.BD_calculator_color .title {
 	text-align: center;
 }
-.BD_calculator.BD_calculator_color .title .question {	
+.BD_calculator.BD_calculator_color .title .question {
 	width: 25px;
 	height: 25px;
 	background: url('/local/templates/aspro-scorp_royaltent/images/icon_question.svg') no-repeat center;
@@ -749,7 +749,7 @@
 	width: 10px;
 	height: 10px;
 	background: #fff;
-	border-radius: 50%;	
+	border-radius: 50%;
 	opacity: 0;
 }
 .BD_calculator.BD_calculator_color .colors li.color-0:before {
@@ -774,7 +774,7 @@
 }
 .BD_calculator.BD_calculator_season .seasons .season-item:last-child {
 	margin-right: -5px;
-	margin-left: 5px;	
+	margin-left: 5px;
 }
 .BD_calculator.BD_calculator_floor .floors .floor-item h4,
 .BD_calculator.BD_calculator_season .seasons .season-item h4 {
@@ -792,7 +792,7 @@
 	background: #f5f5f5;
 }
 .BD_calculator.BD_calculator_floor .floors .floor-item:hover .question,
-.BD_calculator.BD_calculator_season .seasons .season-item:hover .question {	
+.BD_calculator.BD_calculator_season .seasons .season-item:hover .question {
 	position: absolute;
 	content: '';
 	right: 0;
@@ -859,12 +859,12 @@
 	position: relative;
 	cursor: pointer;
 	border: 1px solid #fff;
-	height: 140px;	
+	height: 140px;
 	padding: 30px 0px;
 	font-size: 13px;
 	font-weight: 600;
 	text-align: center;
-	overflow: hidden;		
+	overflow: hidden;
 	line-height: 1.4;
 }
 .BD_calculator.BD_calculator_floor .floors .floor-item > .floor-type .note,
@@ -915,24 +915,24 @@
 @media all and (max-width: 768px) {
 	.BD_product_main {
 		display:flex;
-        flex-flow: wrap;		
+        flex-flow: wrap;
 	}
 	.BD_product_main > .col-md-4 {
 		margin-bottom: 20px;
 		width: 100%;
-	}			
-	.BD_product_main .BD_product_wpcalculator {
-		order: 2;		
 	}
-	
+	.BD_product_main .BD_product_wpcalculator {
+		order: 2;
+	}
+
 	.BD_product_main .BD_product_wpgallery {
-		order: 1;		
-	}	
-	
+		order: 1;
+	}
+
 	.BD_product_main .BD_product_wpachives {
 		order: 3;
 	}
-	
+
 	.BD_calculator.BD_calculator_floor .floors .floor-item > .floor-type img {
 		height: 50px !important;
 	}
@@ -948,7 +948,7 @@
 	}
 	.BD_product .detail .chars .props_table td:last-child {
 		padding-top:  0px !important;
-	}	
+	}
 	.BD_product .detail .chars .props_table .char_value span {
 		padding: 0 !important;
 		margin: 0 !important;
@@ -957,7 +957,7 @@
 	.BD_product .BD_product_details .content {
 		margin-left:  0 !important;
 		margin-top: 20px !important;
-	}	
+	}
 	.BD_product .BD_product_gallery .gallery-widget .flexslider {
 		height: auto !important;
 	}
@@ -966,9 +966,9 @@
 		padding-right: 10px !important;
 		padding-bottom: 0px !important
 	}
-	.BD_product .BD_product_gallery .gallery-widget .flexslider .slides.items li {
+	.BD_product .BD_product_gallery .gallery-widget .flexslider .slideshow.items li {
 		height: 300px !important;
-	}	
+	}
 	.BD_product .BD_product_gallery .gallery-widget .flex-direction-nav {
 		display: block;
 		opacity: .5;
