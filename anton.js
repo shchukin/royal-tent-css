@@ -43,5 +43,11 @@
             }
         });
 
+
+
+        $('.filters__handler').on('click', function () {
+            $(this).parents('.filters').toggleClass('filters--expanded');
+        });
+
     });
 })(jQuery);
