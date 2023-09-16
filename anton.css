@@ -805,6 +805,10 @@
             color: #FFFFFF;
         }
 
+        .pages__item--hidden-on-mobile {
+
+        }
+
         .pages__item--highlight,
         .pages__item--highlight:hover {
             background-color: #D5C5A7;
@@ -831,6 +835,10 @@
 @media (max-width: 767px) {
     .pages {
         padding: 24px 0;
+    }
+
+    .pages__item--hidden-on-mobile {
+        display: none;
     }
 }
 
