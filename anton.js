@@ -20,10 +20,38 @@
         });
 
         $('.slideshow__ghost').on('mouseenter', function () {
-            console.log($(this).index() )
             slide($(this).parents('.slideshow'), $(this).index());
         });
 
+
+        if(window.matchMedia("(max-width: 1199px)").matches) {
+
+            $(".slideshow").swipe({
+
+                swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+
+                    const $slideshow = $(event.target).parents('.slideshow');
+                    const $currentItem = $slideshow.find('.slideshow__dot--current');
+
+                    if (direction === 'left') {
+                        if ($currentItem.next('.slideshow__dot').length) {
+                            slide($slideshow, $currentItem.next('.slideshow__dot').index())
+                        } else {
+                            slide($slideshow, $currentItem.siblings('.slideshow__dot').first().index());
+                        }
+                    }
+
+                    if (direction === 'right') {
+                        if ($currentItem.prev('.slideshow__dot').length) {
+                            slide($slideshow, $currentItem.prev('.slideshow__dot').index())
+                        } else {
+                            slide($slideshow, $currentItem.siblings('.slideshow__dot').last().index());
+                        }
+                    }
+
+                }
+            });
+        }
 
         $('.param__handler').on('click', function () {
             const $param = $(this).parents('.param');
