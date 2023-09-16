@@ -252,6 +252,12 @@
                 transition: background-color 0.5s ease;
             }
 
+            .slideshow__dot:hover::before {
+                background-color: #FFFFFF;
+                transition: none;
+            }
+
+
         .slideshow__dot--current {
 
         }
