@@ -56,6 +56,10 @@
     user-select: none;
 }
 
+.button:hover {
+    filter: brightness(1.7);
+}
+
 
 
 
