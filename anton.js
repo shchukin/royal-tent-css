@@ -15,8 +15,12 @@
             $slideshow.find('.slideshow__dot').eq(slideTo).addClass('slideshow__dot--current');
         }
 
+        $('.slideshow__dot').on('click', function () {
+            slide($(this).parents('.slideshow'), $(this).index());
+        });
 
-        $('.slideshow__dot').on('click mouseenter', function () {
+        $('.slideshow__ghost').on('mouseenter', function () {
+            console.log($(this).index() )
             slide($(this).parents('.slideshow'), $(this).index());
         });
 
