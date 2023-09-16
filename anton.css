@@ -1143,19 +1143,26 @@
     white-space: nowrap;
 }
     .check-list__item {
-        box-shadow: inset 0 1px 0 0 #E5E5E5;
-    }
 
-    .check-list__item:first-child {
-        box-shadow: none;
     }
         .check-list__item .choice {
             width: 100%;
-            border-left: 16px solid transparent;
-            border-right: 16px solid transparent;
+            border-top: 1px solid #E5E5E5;
+            padding-left: 16px;
+            padding-right: 16px;
         }
+
+        .check-list__item:first-child .choice {
+            border-top: none;
+        }
+
+        .check-list__item .choice:hover {
+            background-color: #FAFAFA;
+        }
+
             .check-list__item .choice__icon {
                 margin-top: 3px;
+                margin-left: 16px;
                 width: 18px;
                 height: 18px;
             }
