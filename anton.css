@@ -1,7 +1,7 @@
 @keyframes slideDown {
     from {
         opacity: 0.4;
-        transform: translateY(-4px);
+        transform: translateY(-8px);
     }
     to {
         opacity: 1;
@@ -1052,12 +1052,12 @@
 
         .filters--expanded .filters__list {
             display: block;
-            animation: slideDown 0.2s ease;
+            animation: slideDown 0.4s ease;
         }
 
         .filters--expanded .filters__options {
             display: block;
-            animation: slideDown 0.2s ease;
+            animation: slideDown 0.4s ease;
         }
 }
 
