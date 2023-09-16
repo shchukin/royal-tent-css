@@ -1045,18 +1045,19 @@
         color: inherit;
         cursor: pointer;
     }
-        .param__handler::after {
-            content: "";
+
+    .param__handler:hover {
+        border-color: #D7D7D7;
+        color: #CBB892;
+    }
+        .param__chevron {
             flex-shrink: 0;
             margin-left: 5px;
             margin-right: 1px;
             display: block;
             width: 12px;
             height: 12px;
-            background-image: url("images/param.svg");
-            background-size: 12px 12px;
-            background-repeat: no-repeat;
-            background-position: center center;
+            fill: currentColor;
         }
 
     .param__dropdown {
