@@ -27,7 +27,7 @@
         if(window.matchMedia("(max-width: 1199px)").matches) {
 
             $(".slideshow").swipe({
-
+                allowPageScroll: 'vertical',
                 swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
 
                     const $slideshow = $(event.target).parents('.slideshow');
