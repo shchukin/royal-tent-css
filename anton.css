@@ -278,7 +278,9 @@
 
 
 .preview {
-    display: block;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
     box-shadow: inset 0 0 0 1px #ECECEC;
     color: inherit;
 }
@@ -329,6 +331,9 @@
             }
 
     .preview__body {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
         padding: 18px 16px 20px;
     }
         .preview__heading,
@@ -362,7 +367,8 @@
             }
 
         .preview__footer {
-            margin-top: 8px;
+            margin-top: auto;
+            padding-top: 8px;
             display: flex;
             align-items: center;
             justify-content: space-between;
