@@ -60,8 +60,19 @@
     filter: brightness(1.7);
 }
 
+.button--link-alike,
+.button--link-alike:hover {
+    min-width: 0;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: transparent;
+    color: #082340;
+}
 
 
+.button--smaller {
+
+}
 
 .tag,
 .tag:hover,
@@ -986,10 +997,12 @@
         }
 
         .filters__options {
+            margin-top: 1px;
             display: flex;
             align-items: flex-start;
             gap: 16px;
             margin-left: 16px;
+            margin-right: auto;
         }
             .filters__options::before {
                 content: "";
@@ -1004,9 +1017,54 @@
 
             }
 
+        .filters__operations {
+            margin-top: 1px;
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-left: 16px;
+        }
+            @media (min-width: 1200px) {
+
+                .filters__operations .button {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    font-size: 14px;
+                }
+
+                .filters__operations .button--link-alike {
+                    position: relative;
+                    top: 1px;
+                    padding-left: 0;
+                    padding-right: 0;
+                    font-size: 14px;
+                }
+            }
+
+
+
+@media (min-width: 1300px) and (max-width: 1499px) {
+    .filters__handler {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1299px) {
+
+    .filters__handler {
+        display: none;
+    }
+
+    .filters__list {
+        gap: 0;
+    }
+
+    .filters__item {
+        margin-left: -1px;
+    }
+}
 
 @media (max-width: 1199px) {
-
 
     .filters {
         display: block;
@@ -1082,6 +1140,22 @@
                     margin-top: 2px;
                 }
 
+            .filters__operations {
+                margin-top: 16px;
+                border-top: 1px solid #E0E0E0;
+                padding-top: 16px;
+                padding-bottom: 8px;
+                display: none;
+                margin-left: 0;
+            }
+                .filters__operations::before {
+                    display: none;
+                }
+
+                .filters__addon {
+                    margin-top: 2px;
+                }
+
 
     .filters--expanded {
 
@@ -1097,6 +1171,11 @@
 
         .filters--expanded .filters__options {
             display: block;
+            animation: slideDown 0.4s ease;
+        }
+
+        .filters--expanded .filters__operations {
+            display: flex;
             animation: slideDown 0.4s ease;
         }
 }
@@ -1124,6 +1203,8 @@
     }
 
     .param__handler:hover {
+        position: relative;
+        z-index: 10;
         border-color: #D7D7D7;
         color: #CBB892;
     }
